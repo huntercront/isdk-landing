@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 		var heroSlider = new SiemaWithDots({
 			selector: '.hero-slides',
-			duration: 250,
+			duration: 400,
 			easing: 'ease-out',
 			perPage: 1,
 			startIndex: 0,
@@ -78,12 +78,15 @@ document.addEventListener('DOMContentLoaded', function(){
 			});
 
 			function currentSlideinit() {
-				// $('.hero-slides').removeClass('hide-init');
+				var slides = document.querySelectorAll('.slider-init');
+				for(var z = 0; z < slides.length; z++) {
+					slides[z].classList.remove('slider-init')
+				};
 				
 			}
 
 			var sliderSlideTime = setInterval(() => heroSlider.next(), sliderTimer);
-			var slides = document.querySelectorAll('.hero-cta');
+			var slides = document.querySelectorAll('.slide-left');
 			for(var z = 0; z < slides.length; z++) {
 				var elem = slides[z];   
 				elem.onmouseover = function() {

@@ -4,18 +4,23 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/nulled.css">
-	<link rel="stylesheet" href="./css/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/inportant-slyle.css">
+	<link rel="stylesheet" href="./css/style.css" media="print" onload="this.media='all'">
+	<noscript><link rel="./css/style.css" href="style.css"></noscript>
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;600;800&display=swap" rel="preload" as="style" onload="this.rel='stylesheet';document.querySelector('body').classList.remove('loading-font')" > -->
+	<!-- <link rel="preload" 
+	href="https://fonts.googleapis.com/css2?family=Muli:wght@400;600;800&display=swap"
+	as="style"
+	onload="this.onload=null; this.rel='stylesheet'; document.body.classList.add('fontLoaded')"> -->
 	<title>Document</title>
 </head>
 <body>
-<div class="hero">
-	<div class="content">
-		<div class="row">
+<section class="hero">
 			<div class="hero-slider">
 			<div class="hero-slides">
 
 				<div class="hero-slide">
+					<div class="slide-wrapper">
 					<div class="slide-inner">
 						<div class="slide-left">
 							<div class="slide-left--inner">
@@ -31,7 +36,15 @@
 						</div>
 						<div class="slide-right">
 							<div class="slide-img c-c">
-								<img src="./img/hero/slider-img-1.png" alt="">
+								<picture>
+									<source type="image/webp" data-srcset="./img/hero/slider-img-1.webp">
+									<source type="image/png"	data-srcset="./img/hero/slider-img-1.png">
+									<img
+										class="lazy"
+										alt="shop page 3d illustration"
+										src="./img/hero/hero-placeholder.svg" data-src="./img/hero/slider-img-1.png">
+								</picture>
+							</div>
 							</div>
 						</div>
 					</div>
@@ -39,7 +52,8 @@
 				<!-- slide--1 -->
 
 
-				<div class="hero-slide">
+				<div class="hero-slide slider-init">
+					<div class="slide-wrapper">
 					<div class="slide-inner">
 						<div class="slide-left">
 							<div class="slide-left--inner">
@@ -54,65 +68,138 @@
 						</div>
 						<div class="slide-right">
 							<div class="slide-img c-c">
-								<img src="./img/hero/slider-img-2.png" alt="">
+								<picture>
+									<source type="image/webp" data-srcset="./img/hero/slider-img-2.webp">
+									<source type="image/png"	data-srcset="./img/hero/slider-img-2.png">
+									<img
+										class="lazy"
+										alt="shop page 3d illustration"
+										src="./img/hero/hero-placeholder.svg" data-src="./img/hero/slider-img-2.png">
+								</picture>
+							</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<!-- slide--2 -->
 
-				<div class="hero-slide">
-					<div class="slide-inner">
-						<div class="slide-left">
-							<div class="slide-left--inner">
-							<h1 class="h1 slide-title">Looking for a reliable contractor?</h1>
-							<ol>
-								<li>We use best e-commerce practices </li>
-								<li>Deliver fully open-source code to you upon project completion</li>
-								<li>And we take even more risk being sure you’ll stay with us </li>
-							</ol>
-							<button class="btn hero-cta">Contact us</button>
-						</div>
-						</div>
-						<div class="slide-right">
-							<div class="slide-img c-c">
-								<img src="./img/hero/slider-img-3.png" alt="">
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- slide--3 -->
-
-				<div class="hero-slide">
-					<div class="slide-inner">
-						<div class="slide-left">
-							<div class="slide-left--inner">
-							<h1 class="h1 slide-title">Not just another shopping cart platform
-							</h1>
-							<ol>
-								<li>We use best e-commerce practices </li>
-								<li>Deliver fully open-source code to you upon project completion</li>
-								<li>And we take even more risk being sure you’ll stay with us </li>
-							</ol>
-							<button class="btn hero-cta">Contact us</button>
-						</div>
-						</div>
-						<div class="slide-right">
-							<div class="slide-img c-c">
-								<img src="./img/hero/slider-img-4.png" alt="">
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- slide--4 -->
+				
 
 
 			</div>
 		</div>
+</section>
+
+
+
+
+
+<section class="feature">
+	<div class="content">
+		<h2 class="feature-title inline--title centured--title title--s">Advertise, sell and 
+			engage your customers 24/7</h2>
+		<div class="row">
+
+			<div class="feature-card">
+				<div class="card--img">
+					<picture>
+						<source type="image/webp" data-srcset="./img/feature/feature-img-6.webp">
+						<source type="image/png"	data-srcset="./img/feature/feature-img-6.png">
+						<img
+							class="lazy"
+							alt="shop page 3d illustration"
+							src="./img/feature/feature-placeholder.svg" data-src="./img/feature/feature-img-6.png">
+					</picture>
+				</div>
+				<h4 class="card--title sub-title centured--title">Facebook & Instagramm Shopping</h4>
+			</div>
+			<!-- feature-card-6 -->
+
+
+			<div class="feature-card">
+				<div class="card--img">
+					<picture>
+						<source type="image/webp" data-srcset="./img/feature/feature-img-1.webp">
+						<source type="image/png"	data-srcset="./img/feature/feature-img-1.png">
+						<img
+							class="lazy"
+							alt="shop page 3d illustration"
+							src="./img/feature/feature-placeholder.svg" data-src="./img/feature/feature-img-1.png">
+					</picture>
+				</div>
+				<h4 class="card--title sub-title centured--title">Online-store</h4>
+			</div>
+			<!-- feature-card-1 -->
+
+
+
+			<div class="feature-card">
+				<div class="card--img">
+					<picture>
+						<source type="image/webp" data-srcset="./img/feature/feature-img-3.webp">
+						<source type="image/png"	data-srcset="./img/feature/feature-img-3.png">
+						<img
+							class="lazy"
+							alt="shop page 3d illustration"
+							src="./img/feature/feature-placeholder.svg" data-src="./img/feature/feature-img-3.png">
+					</picture>
+				</div>
+				<h4 class="card--title sub-title centured--title">Mobile store apps</h4>
+			</div>
+			<!-- feature-card-3 -->
+
+			<div class="feature-card">
+				<div class="card--img light-blue">
+					<picture>
+						<source type="image/webp" data-srcset="./img/feature/feature-img-4.webp">
+						<source type="image/png"	data-srcset="./img/feature/feature-img-4.png">
+						<img
+							class="lazy"
+							alt="shop page 3d illustration"
+							src="./img/feature/feature-placeholder.svg" data-src="./img/feature/feature-img-4.png">
+					</picture>
+				</div>
+				<h4 class="card--title sub-title centured--title">Digital marketing and ads</h4>
+			</div>
+			<!-- feature-card-4 -->
+
+			<div class="feature-card">
+				<div class="card--img">
+					<picture>
+						<source type="image/webp" data-srcset="./img/feature/feature-img-5.webp">
+						<source type="image/png"	data-srcset="./img/feature/feature-img-5.png">
+						<img
+							class="lazy"
+							alt="shop page 3d illustration"
+							src="./img/feature/feature-placeholder.svg" data-src="./img/feature/feature-img-5.png">
+					</picture>
+				</div>
+				<h4 class="card--title sub-title centured--title">Client service in live-chat and WhatsApp/Telegram</h4>
+			</div>
+			<!-- feature-card-5 -->
+
+			<div class="feature-card">
+				<div class="card--img light-blue">
+					<picture>
+						<source type="image/webp" data-srcset="./img/feature/feature-img-2.webp">
+						<source type="image/png"	data-srcset="./img/feature/feature-img-2.png">
+						<img
+							class="lazy"
+							alt="shop page 3d illustration"
+							src="./img/feature/feature-placeholder.svg" data-src="./img/feature/feature-img-2.png">
+					</picture>
+				</div>
+				<h4 class="card--title sub-title centured--title">Google & Facebook  product placement</h4>
+			</div>
+			<!-- feature-card-2 -->
 		</div>
 	</div>
-</div>
+</section>
+
+<h2 class="inline--title centured--title title--l grow-sales">Launch your end-to-end e-Commerce and start marketing campaigns</h2>
+
 <script src="./js/script.js"></script>
+<script async src="./js/lazy-load.js"></script>
 <script src="./js/slider.js"></script>
 </body>
 </html>
