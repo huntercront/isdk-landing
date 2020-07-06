@@ -1,5 +1,5 @@
 WebFontConfig = {
-	google: { families: ['Muli:400;600;800'] }
+	google: { families: ['Muli:400,600,800'] }
 };
 
 (function(d) {

@@ -7,7 +7,7 @@
 
 
 document.addEventListener('DOMContentLoaded', function(){
-	var sliderTimer = 5000
+	var sliderTimer = 15000
 	var heroSlider = document.querySelector('.hero-slides');
 	console.log(heroSlider)
 	if(heroSlider){
