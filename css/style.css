@@ -1,3 +1,63 @@
+.h4{
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+.h3{
+	font-size: 2.25rem;
+	font-weight: 800;
+	line-height: 1.25;
+}
+
 .grow-sales{
 	margin-top: 5rem;
+}
+.cta-row-button{
+	flex: 0 0 100%;
+	max-width: 100%;
+	width: 100%;
+}
+.light-text{
+	color: #ffffff;
+}
+.main-black{
+	color: #121118;
+}
+.cta-block{
+	max-width: 1680px;
+	margin: 0 auto;
+	background: #FFA101;
+	padding-top: 2rem;
+	padding-bottom: 1.25rem;
+}
+.cta-button{
+	padding: 0.5rem 1.75rem;
+	font-size: 1rem;
+	font-weight: 800;
+	border-radius: 3px;
+	border: none;
+	outline: none;
+	margin: 0 0.5rem;
+}
+.cta-title{
+	margin-bottom: 0;
+	margin-right: 2rem;
+}
+.cta-text{
+	font-weight: 400;
+	font-size: 0.9rem;
+	margin-top: 1.25rem;
+}
+.section-title{
+
+}
+
+/* tailored-inner */
+.tailored-descr,.tailored-tabs{
+	flex: 0 0 50%;
+	max-width: 50%;
+	width: 100%;
+	padding: 0 10px;
+}
+.tailored-title{
+	max-width: 450px;
 }
