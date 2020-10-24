@@ -10,11 +10,14 @@ WebFontConfig = {
     s.parentNode.insertBefore(wf, s);
 })(document);
 
-
 let tabSelects = document.querySelectorAll('.tailored-tab-select-inner')
 tabSelects.forEach(function(tabSelect) {
     tabSelect.addEventListener('click', function() {
-        document.querySelector('.tailored-tab-select-inner.active').classList.remove('active')
-        this.classList.add('active');
+        let recentActiveTab = document.querySelector('.tailored-tab-select-inner.active')
+        let nowActive = this;
+        recentActiveTab.classList.remove('active')
+        document.querySelector('[data-tab="' + recentActiveTab.getAttribute('data-for-tab') + '"]').classList.remove('active');
+        nowActive.classList.add('active');
+        document.querySelector('[data-tab="' + nowActive.getAttribute('data-for-tab') + '"]').classList.add('active')
     })
 })

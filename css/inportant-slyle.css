@@ -429,6 +429,10 @@ html {
     justify-content: space-between;
 }
 
+.slider-init {
+    display: none;
+}
+
 
 /* typography */
 
