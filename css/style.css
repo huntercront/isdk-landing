@@ -111,6 +111,7 @@
     user-select: none;
     transition: 200ms ease-in;
     transition-property: background;
+    position: relative;
 }
 
 .tailored-tab-select-inner:hover {
@@ -354,7 +355,7 @@
     width: 15px;
     height: 15px;
     animation-delay: 2s;
-    animation-duration: 25s;
+    animation-duration: 15s;
 }
 
 .circles li:nth-child(10) {
@@ -362,7 +363,7 @@
     width: 150px;
     height: 150px;
     animation-delay: 0s;
-    animation-duration: 11s;
+    animation-duration: 20s;
 }
 
 @keyframes animate {
@@ -372,7 +373,7 @@
         border-radius: 0;
     }
     100% {
-        transform: translateY(-500px) rotate(720deg);
+        transform: translateY(-400px) rotate(520deg);
         opacity: 0;
         border-radius: 50%;
     }
@@ -401,4 +402,50 @@
 
 .s-card-img img {
     width: 100%;
+}
+
+
+/* wave */
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0)
+    }
+}
+
+.wave-balock {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    /* filter: blur(30px); */
+}
+
+.tab-progress-indicator {
+    height: 0.25rem;
+    background-color: rgba(255, 161, 1, 0.3);
+    /* transition: width liner; */
+}
+
+.tab-progress {
+    position: absolute;
+    width: 100%;
+    bottom: -0.25rem;
+    left: 0;
+    background-color: rgba(255, 161, 1, 0.1);
+    transition: opacity 100ms ease-in;
+    opacity: 0;
+}
+
+.tailored-tab-select-inner.active .tab-progress {
+    opacity: 1;
 }
