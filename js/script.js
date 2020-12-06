@@ -1,5 +1,5 @@
 WebFontConfig = {
-    google: { families: ['Manrope:400,600,800'] }
+    google: { families: ['Manrope:400,600,800&display=swap'] }
 };
 
 (function(d) {
@@ -9,6 +9,52 @@ WebFontConfig = {
     wf.async = true;
     s.parentNode.insertBefore(wf, s);
 })(document);
+
+
+var Loader = function() {}
+Loader.prototype = {
+    require: function(scripts, callback) {
+        this.loadCount = 0;
+        this.totalRequired = scripts.length;
+        this.callback = callback;
+
+        for (var i = 0; i < scripts.length; i++) {
+            this.writeScript(scripts[i]);
+        }
+    },
+    loaded: function(evt) {
+        this.loadCount++;
+
+        if (this.loadCount == this.totalRequired && typeof this.callback == 'function') this.callback.call();
+    },
+    writeScript: function(src) {
+        var self = this;
+        var s = document.createElement('script');
+        s.type = "text/javascript";
+        s.defer = true;
+        s.src = src;
+        s.addEventListener('load', function(e) { self.loaded(e); }, false);
+        var head = document.getElementsByTagName('head')[0];
+        head.appendChild(s);
+    }
+}
+
+var l = new Loader();
+l.require([
+        "../js/typed.min.js"
+
+    ],
+    function() {
+
+        var typed = new Typed('.print-text', {
+            strings: ["digital marketing campaigns", "mobile shopping", "Facebook shopping", "Instagram shopping", "ads campaigns", "e-mail campaigns", "Office365 sync", "CRM integration", "ERP integration"],
+            typeSpeed: 70,
+            backSpeed: 50,
+            loop: true,
+            backDelay: 1500
+        });
+
+    });
 
 
 // var play = new autoPlayTabs();
