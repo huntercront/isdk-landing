@@ -57,6 +57,19 @@ l.require([
     });
 
 
+let tabChats = document.querySelectorAll('[data-target]')
+tabChats.forEach(function(tabChat) {
+    tabChat.addEventListener('click', function() {
+        document.querySelector('.chat-select.active').classList.remove('active')
+        document.querySelector('.select-tab.selected').classList.remove('selected')
+        this.classList.add('selected')
+        document.querySelector('[data-chat=' + this.getAttribute('data-target') + ']').classList.add('active')
+        document.querySelector('[data-indicator]').setAttribute('data-indicator', this.getAttribute('data-target'))
+    })
+})
+
+
+
 // var play = new autoPlayTabs();
 let tabSelects = document.querySelectorAll('.tailored-tab-select-inner')
 tabSelects.forEach(function(tabSelect) {

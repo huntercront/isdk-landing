@@ -457,6 +457,12 @@ html.wf-active body {
     font-weight: 600;
 }
 
+.h3 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
 .h2 {
     font-size: 2rem;
     line-height: 1.25;
@@ -497,6 +503,18 @@ p {
 
 .title--l {
     max-width: 678px;
+}
+
+.light-text {
+    color: #ffffff;
+}
+
+.main-black {
+    color: #121118;
+}
+
+.gray-text {
+    color: #5D5D69;
 }
 
 
