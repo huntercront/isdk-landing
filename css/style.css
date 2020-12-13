@@ -697,6 +697,10 @@ strong {
 
 /* price */
 
+.price {
+    margin-top: 5rem;
+}
+
 .toggle-wrapper {
     position: relative;
 }
@@ -824,4 +828,114 @@ input.tgl:checked+.tgl-btn .tgl-label-text:first-child {
 ul.plan-features>li {
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
+}
+
+.plane-price {
+    color: #FFA101;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.plan-sub {
+    color: #FFA101;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.price-head {
+    margin-bottom: 0.75rem;
+}
+
+.plan-name {
+    margin-bottom: 1rem;
+    line-height: 1.15;
+}
+
+.plan-features {
+    margin-bottom: 1.5rem;
+}
+
+.plan-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.plan-icon img {
+    width: 100%;
+}
+
+.plan-icon+.plan-icon {
+    margin-left: 0.5rem;
+}
+
+.price .pcs-3 {
+    transition: 200ms ease-in;
+    transition-property: background;
+}
+
+.price-table {
+    position: relative;
+    padding: 0.5rem;
+    padding-top: 3.5rem;
+    padding-bottom: 1.25rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.price-selected {
+    background: #F9F9F9;
+}
+
+.get-plane {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.price-label {
+    position: absolute;
+    top: 1rem;
+    left: 0.5rem;
+    background: #222222;
+    color: #fff;
+    font-weight: 800;
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 1rem;
+    opacity: 0;
+    transition: 200ms ease-in;
+    transition-property: opacity;
+}
+
+.get {
+    opacity: 0;
+    margin: 0 auto;
+    background: #222222;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    line-height: 1;
+    border: none;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    transition: 200ms ease-in;
+    transition-property: opacity, transform;
+}
+
+.get:hover {
+    transform: translate(0, -3px) scale(1.06);
+}
+
+.price-selected .get {
+    opacity: 1;
+}
+
+.price-selected .price-label {
+    opacity: 1;
+}
+
+.prices-wrapper {
+    margin-top: 1rem;
 }

@@ -68,6 +68,14 @@ tabChats.forEach(function(tabChat) {
     })
 })
 
+let priceTables = document.querySelectorAll('.price-table')
+priceTables.forEach(function(priceTable) {
+    priceTable.addEventListener('mouseenter', function() {
+        document.querySelector('.pcs-3.price-selected').classList.remove('price-selected')
+        this.closest('.pcs-3').classList.add('price-selected')
+    })
+})
+
 
 
 // var play = new autoPlayTabs();
