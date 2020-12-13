@@ -486,6 +486,12 @@ p {
     font-size: 0.9rem;
 }
 
+.descr-l {
+    font-weight: 600;
+    line-height: 1.35;
+    font-size: 1rem;
+}
+
 .inline--title {
     font-weight: 800;
     font-size: 1.75rem;

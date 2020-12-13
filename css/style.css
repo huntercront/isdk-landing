@@ -120,7 +120,7 @@
             transform: translate3d(0%, 0px, 0px);
         }
         100% {
-            transform: translate3d(-1876px, 0px, 0px);
+            transform: translate3d(-2254px, 0px, 0px);
         }
     }
 }
@@ -134,7 +134,7 @@
             transform: translate3d(0%, 0px, 0px);
         }
         100% {
-            transform: translate3d(-2254px, 0px, 0px);
+            transform: translate3d(-1876px, 0px, 0px);
         }
     }
 }
@@ -642,4 +642,186 @@ strong {
 [data-target="telegram"].select-tab.selected {
     color: #0088CC;
     fill: #0088CC;
+}
+
+
+/* marketplaces */
+
+.marketplace {
+    position: relative;
+    margin-top: 4rem;
+}
+
+.marketplace .content {
+    position: relative;
+}
+
+.marketplace .content::after {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background: #F9F9F9;
+    z-index: -1;
+    border-radius: 1rem;
+}
+
+.marketplace h2 {
+    text-align: center;
+    max-width: 20ch;
+    margin-bottom: 3.5rem;
+    padding-top: 3rem;
+}
+
+.mark-icon {
+    width: 3.25rem;
+    height: 3.25rem;
+    margin-bottom: 1rem;
+}
+
+.mark-icon img {
+    width: 100%;
+}
+
+.mark-img {
+    margin-top: 2rem;
+}
+
+.mark-img img {
+    max-width: 800px;
+    width: 100%;
+}
+
+
+/* price */
+
+.toggle-wrapper {
+    position: relative;
+}
+
+.toggle-wrapper label {
+    margin-bottom: 0;
+}
+
+.toggle-wrapper input.tgl {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.tgl-btn-indicator:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.tgl-btn-indicator {
+    outline: 0;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    width: 3.2rem;
+    height: 1.9rem;
+    left: 0;
+    z-index: 1;
+    background: #E6E6E6;
+    border-radius: 2.9rem;
+    transition: 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-property: background;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.tgl-btn-indicator:after {
+    z-index: 5;
+    width: 1.5rem;
+    height: 1.5rem;
+    left: 0.25rem;
+    border-radius: 1.5rem;
+    background: #ffffff;
+    transition: 200ms ease-in;
+}
+
+.tgl:checked+.tgl-btn .tgl-btn-indicator:after {
+    left: 1.45rem;
+}
+
+input.tgl:active:checked+.tgl-btn .tgl-btn-indicator:after {
+    width: 2rem;
+    transform: translate(-0.5rem, -50%);
+}
+
+input.tgl:active+.tgl-btn .tgl-btn-indicator:after {
+    width: 2rem;
+}
+
+input.tgl:checked+.tgl-btn .tgl-btn-indicator {
+    background: #00C48C;
+}
+
+input.tgl:not(:checked)+.tgl-btn .tgl-label-text:last-child {
+    color: #8C98A4;
+}
+
+input.tgl:checked+.tgl-btn .tgl-label-text:last-child {
+    color: #000000;
+}
+
+input.tgl:checked+.tgl-btn .tgl-label-text:first-child {
+    color: #8C98A4;
+}
+
+.tgl-label-text {
+    user-select: none;
+    cursor: pointer;
+    transition: 200ms ease-in;
+    transition-property: color;
+}
+
+.price-toggle {
+    display: flex;
+    flex: 0 0 100%;
+    padding-top: 2.5rem;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.arrow-label {
+    position: relative;
+}
+
+.arrow-block {
+    position: absolute;
+    top: 0;
+    left: 14%;
+}
+
+.arrow {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-110%, 0);
+    width: 28px;
+}
+
+.arrow-label span {
+    background: #00C48C;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 800;
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 1rem;
+}
+
+ul.plan-features>li {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
 }
