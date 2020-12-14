@@ -944,7 +944,8 @@ ul.plan-features>li:last-child {
     margin-top: 1rem;
     height: auto;
     transition: 0.2s ease-out;
-    transition-property: min-height, max-height;
+    max-height: none;
+    transition-property: height;
 }
 
 .addons-label {
@@ -971,7 +972,7 @@ ul.plan-features>li:last-child {
 .price-tables.active {
     display: block;
     opacity: 0;
-    animation: priceFade 200ms ease-in forwards;
+    animation: priceFade 300ms ease-in forwards;
     pointer-events: all;
 }
 
@@ -988,4 +989,140 @@ ul.plan-features>li:last-child {
 
 .addons .plan-features {
     margin-bottom: 0;
+}
+
+
+/* .timeline */
+
+.timeline {
+    margin-top: 6rem;
+}
+
+.sprints {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.time-number {
+    width: 2.25rem;
+    height: 2.25rem;
+    background: #F9F9F9;
+    flex: 0 0 2.25;
+    margin-right: 0.5rem;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.sprint-name {
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.spint-time {
+    margin-bottom: 1.25rem;
+}
+
+.sprint-inner {
+    padding: 1rem;
+    border: 2px solid #F5F5F5;
+    border-radius: 0.5rem;
+    width: 190px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100%;
+}
+
+.sprint+.sprint {
+    margin-left: 1rem;
+}
+
+.sprint-prog {
+    margin-top: 0.6rem;
+    margin-top: auto;
+}
+
+.sprint-count {
+    width: 2.5rem;
+    font-size: 0.9rem;
+    text-align: right;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.sprint-line {
+    width: calc(100% - 1rem);
+    background: #F9F9F9;
+    height: 6px;
+    border-radius: 6px;
+}
+
+.line-dot {
+    border-radius: 6px;
+    width: 6px;
+    height: 6px;
+}
+
+.sprint-1 .line-dot,
+[data-sprint="sprint-1"] .performer-icon {
+    background: #BE52F2;
+}
+
+.sprint-1 .sprint-count {
+    color: #BE52F2;
+}
+
+.sprint-2 .line-dot {
+    background: #FFBD4D;
+}
+
+.sprint-2 .sprint-count {
+    color: #FFBD4D;
+}
+
+.sprint-3 .line-dot {
+    background: #FFA26B;
+}
+
+.sprint-3 .sprint-count {
+    color: #FFA26B;
+}
+
+.sprint-4 .line-dot {
+    background: #FF647C;
+}
+
+.sprint-4 .sprint-count {
+    color: #FF647C;
+}
+
+.sprint-5 .line-dot {
+    background: #00C48C;
+}
+
+.sprint-5 .sprint-count {
+    color: #00C48C;
+}
+
+.performer-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.7rem;
+    color: #fff;
+    border-radius: 1.5rem;
+    flex: 0 0 1.5rem;
+    margin-right: 0.5rem;
+    font-weight: 800;
+}
+
+.task-name {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+[data-sprint="sprint-1"] .sprint-task {
+    background: #FDF6FF;
+    padding: 0.5rem;
+    border-left: 3px solid #BE52F2;
 }

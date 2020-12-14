@@ -64,20 +64,20 @@ let priceContainer = document.querySelector('.prices-wrapper')
 
 priceSwap.addEventListener('input', function(e) {
     if (this.checked) {
-        priceContainer.style.maxHeight = document.querySelector('.price-tables.active').offsetHeight + 'px'
+        priceContainer.style.height = document.querySelector('.price-tables.active').offsetHeight + 'px';
         setTimeout(function() {
             document.querySelector('.price-tables.active').classList.remove('active');
             document.querySelector('[data-plan=subscription]').classList.add('active');
-            priceContainer.style.maxHeight = document.querySelector('.price-tables.active').offsetHeight + 'px'
-        }, 20)
+            priceContainer.style.height = document.querySelector('.price-tables.active').offsetHeight + 'px';
 
+        }, 10)
     } else {
-        priceContainer.style.minHeight = document.querySelector('.price-tables.active').offsetHeight + 'px'
+
         setTimeout(function() {
             document.querySelector('.price-tables.active').classList.remove('active');
             document.querySelector('[data-plan=one-off]').classList.add('active');
-            priceContainer.style.minHeight = document.querySelector('.price-tables.active').offsetHeight + 'px'
-        }, 40)
+            priceContainer.style.height = document.querySelector('[data-plan=one-off]').offsetHeight + 'px'
+        }, 10)
     }
 
 })
