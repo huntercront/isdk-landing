@@ -57,6 +57,40 @@ l.require([
     });
 
 
+
+
+let priceSwap = document.querySelector('.price-swap');
+let priceContainer = document.querySelector('.prices-wrapper')
+
+priceSwap.addEventListener('input', function(e) {
+    if (this.checked) {
+        priceContainer.style.maxHeight = document.querySelector('.price-tables.active').offsetHeight + 'px'
+        setTimeout(function() {
+            document.querySelector('.price-tables.active').classList.remove('active');
+            document.querySelector('[data-plan=subscription]').classList.add('active');
+            priceContainer.style.maxHeight = document.querySelector('.price-tables.active').offsetHeight + 'px'
+        }, 20)
+
+    } else {
+        priceContainer.style.minHeight = document.querySelector('.price-tables.active').offsetHeight + 'px'
+        setTimeout(function() {
+            document.querySelector('.price-tables.active').classList.remove('active');
+            document.querySelector('[data-plan=one-off]').classList.add('active');
+            priceContainer.style.minHeight = document.querySelector('.price-tables.active').offsetHeight + 'px'
+        }, 40)
+    }
+
+})
+
+let priceTables = document.querySelectorAll('.price-table')
+priceTables.forEach(function(priceTable) {
+    priceTable.addEventListener('mouseenter', function() {
+        document.querySelector('.active .pcs-3.price-selected').classList.remove('price-selected')
+        this.closest('.pcs-3').classList.add('price-selected')
+    })
+})
+
+
 let tabChats = document.querySelectorAll('[data-target]')
 tabChats.forEach(function(tabChat) {
     tabChat.addEventListener('click', function() {
@@ -68,13 +102,7 @@ tabChats.forEach(function(tabChat) {
     })
 })
 
-let priceTables = document.querySelectorAll('.price-table')
-priceTables.forEach(function(priceTable) {
-    priceTable.addEventListener('mouseenter', function() {
-        document.querySelector('.pcs-3.price-selected').classList.remove('price-selected')
-        this.closest('.pcs-3').classList.add('price-selected')
-    })
-})
+
 
 
 

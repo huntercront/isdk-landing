@@ -830,6 +830,10 @@ ul.plan-features>li {
     margin-bottom: 0.5rem;
 }
 
+ul.plan-features>li:last-child {
+    margin: 0;
+}
+
 .plane-price {
     color: #FFA101;
     font-weight: 600;
@@ -839,7 +843,7 @@ ul.plan-features>li {
 .plan-sub {
     color: #FFA101;
     font-weight: 600;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .price-head {
@@ -938,4 +942,50 @@ ul.plan-features>li {
 
 .prices-wrapper {
     margin-top: 1rem;
+    height: auto;
+    transition: 0.2s ease-out;
+    transition-property: min-height, max-height;
+}
+
+.addons-label {
+    color: #00C48C;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-bottom: 0.65rem;
+    display: inline-block;
+}
+
+.addons {
+    background: #DDF9F1;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.price-tables {
+    display: none;
+    pointer-events: none;
+}
+
+.price-tables.active {
+    display: block;
+    opacity: 0;
+    animation: priceFade 200ms ease-in forwards;
+    pointer-events: all;
+}
+
+@keyframes priceFade {
+    0% {
+        opacity: 0;
+        transform: scale(0.97);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.addons .plan-features {
+    margin-bottom: 0;
 }
