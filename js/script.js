@@ -56,6 +56,80 @@ l.require([
 
     });
 
+var k = new Loader();
+k.require([
+        "https://api-maps.yandex.ru/2.1/?apikey=9305a291-6747-4854-bcf9-fbaceb877edb&lang=en_US"
+
+    ],
+    function() {
+
+        ymaps.ready(function() {
+            var myMap = new ymaps.Map('map', {
+                    center: [43.97287351983399, -28.529526247234656],
+                    zoom: 3,
+                    controls: ['zoomControl'],
+                    behaviors: ['drag']
+                }),
+
+                // Создаём макет содержимого.
+                MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                    '<div style="color: red; font-weight: bold;">$[properties.iconContent]</div>'
+                ),
+
+                myPlacemark = new ymaps.Placemark([50.38044615073509, 6.275679999999932], {
+                    hintContent: '<div class="hint-map">Honsfeld, Belgium</div>',
+
+                }, {
+                    iconLayout: 'default#image',
+                    iconImageHref: '/img/map/map-pin/benelux-map.svg',
+                    iconImageSize: [50, 50],
+                    iconImageOffset: [-10, -30]
+                }),
+                myPlacemark2 = new ymaps.Placemark([52.508328315696836, 13.396575499999914], {
+                    hintContent: '<div class="hint-map">Berlin</div>',
+
+                }, {
+                    iconLayout: 'default#image',
+                    iconImageHref: '/img/map/map-pin/germany-map.svg',
+                    iconImageSize: [50, 50],
+                    iconImageOffset: [-10, -30]
+                }),
+                myPlacemark3 = new ymaps.Placemark([29.849306595502547, -96.313035], {
+                    hintContent: '<div class="hint-map">Austin, TX</div>',
+
+                }, {
+                    iconLayout: 'default#image',
+                    iconImageHref: '/img/map/map-pin/usa-map.svg',
+                    iconImageSize: [50, 50],
+                    iconImageOffset: [-30, -50]
+                }),
+                myPlacemark4 = new ymaps.Placemark([56.97193289304613, 24.128627500000007], {
+                    hintContent: '<div class="hint-map">Riga, Latvia</div>',
+
+                }, {
+                    iconLayout: 'default#image',
+                    iconImageHref: '/img/map/map-pin/latvia-map.svg',
+                    iconImageSize: [50, 50],
+                    iconImageOffset: [-10, -30]
+                }),
+                myPlacemark5 = new ymaps.Placemark([55.584222181163646, 37.38552449999999], {
+                    hintContent: '<div class="hint-map">Moscow</div>',
+
+                }, {
+                    iconLayout: 'default#image',
+                    iconImageHref: '/img/map/map-pin/russia-map.svg',
+                    iconImageSize: [50, 50],
+                    iconImageOffset: [-10, -30]
+                });
+            myMap.geoObjects
+                .add(myPlacemark).add(myPlacemark2).add(myPlacemark3).add(myPlacemark4).add(myPlacemark5)
+                // .add(myPlacemarkWithContent);
+        })
+
+
+
+    });
+
 
 
 
@@ -79,7 +153,25 @@ priceSwap.addEventListener('input', function(e) {
             priceContainer.style.height = document.querySelector('[data-plan=one-off]').offsetHeight + 'px'
         }, 10)
     }
+})
 
+let sprintSelectors = document.querySelectorAll('.sprint')
+let sprintWrapper = document.querySelector('.tasks-wrapper')
+sprintSelectors.forEach(function(sprintSelector) {
+    sprintSelector.addEventListener('click', function() {
+        if (!this.classList.contains('active')) {
+            sprintWrapper.style.height = presentActive + 'px';
+            var presentActive = document.querySelector('.sprint-tasks.active');
+            var newActive = document.querySelector('[data-sprint=sprint-' + this.getAttribute('sprint') + ']');
+            document.querySelector('.sprint.active').classList.remove('active')
+            this.classList.add('active')
+            setTimeout(function() {
+                presentActive.classList.remove('active');
+                newActive.classList.add('active');
+                sprintWrapper.style.height = newActive.offsetHeight + 'px';
+            }, 10)
+        }
+    })
 })
 
 let priceTables = document.querySelectorAll('.price-table')
