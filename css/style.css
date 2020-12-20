@@ -1298,7 +1298,8 @@ ul.plan-features>li:last-child {
 }
 
 .cont-img img {
-    height: 100%
+    height: 100%;
+    transform: translate(-12.5%, 0);
 }
 
 .cont-link {
@@ -1358,15 +1359,19 @@ ul.plan-features>li:last-child {
     font-size: 0.9rem;
     font-weight: 600;
     line-height: 1;
-    background: transparent;
     transition: 200ms ease-in;
     background: #F9F9F9;
     color: #8C98A4;
+    transition-property: color, background;
     border: none;
 }
 
 .country-btn:hover {
-    opacity: 1;
+    color: #222222;
+}
+
+.country-btn:focus {
+    outline: none;
 }
 
 .country-btn:hover .cont-img {
@@ -1381,6 +1386,15 @@ ul.plan-features>li:last-child {
 
 .countrys {
     margin-bottom: 1rem;
+}
+
+.country_info {
+    display: none;
+}
+
+.country_info.active {
+    display: block;
+    animation: priceFade 200ms ease-in forwards;
 }
 
 .map {

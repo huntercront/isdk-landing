@@ -154,6 +154,19 @@ priceSwap.addEventListener('input', function(e) {
         }, 10)
     }
 })
+let contButtons = document.querySelectorAll('.country-btn')
+contButtons.forEach(function(contButton) {
+    contButton.addEventListener('click', function() {
+        if (!this.classList.contains('active')) {
+            var nextCountry = document.querySelector('[data-from=' + this.getAttribute('data-to') + ']');
+            var curentCountry = document.querySelector('.country_info.active');
+            document.querySelector('.country-btn.active').classList.remove('active');
+            this.classList.add('active');
+            nextCountry.classList.add('active');
+            curentCountry.classList.remove('active');
+        }
+    })
+})
 
 let sprintSelectors = document.querySelectorAll('.sprint')
 let sprintWrapper = document.querySelector('.tasks-wrapper')

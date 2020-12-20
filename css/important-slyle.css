@@ -436,6 +436,65 @@ html.wf-active body {
     font-family: 'Manrope';
 }
 
+.nav-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    background: #FFF8E7;
+    padding: 0 2rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 200;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding: 0.3rem;
+}
+
+.nav-list li {
+    padding: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0 0.2rem;
+}
+
+.nav-list li a {
+    padding: 1rem 0.65rem;
+    display: inline-block;
+    border-radius: 0.25rem;
+    color: #6E4A33
+}
+
+.nav-list li a:hover {
+    background: #FFEED1
+}
+
+.header-cta {
+    padding: 0.75em 1.875em;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    transition: 150ms ease;
+    transition-property: background-color, border-color, box-shadow, color;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    background-color: #FFA101;
+    color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
 .h1,
 .h2,
 .h3,
@@ -607,7 +666,7 @@ p {
 
 .hero-content {
     flex-direction: column;
-    padding-top: 4rem;
+    padding-top: 8rem;
 }
 
 .hero-anim svg {
