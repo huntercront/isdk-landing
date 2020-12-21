@@ -8,11 +8,6 @@
     <link rel="stylesheet" href="./css/important-slyle.css">
     <link rel="stylesheet" href="./css/style.css" media="print" async onload="this.media='all'">
     <noscript><link rel="./css/style.css" href="style.css"></noscript>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;600;800&display=swap" rel="preload" as="style" onload="this.rel='stylesheet';document.querySelector('body').classList.remove('loading-font')" > -->
-    <!-- <link rel="preload" 
-	href="https://fonts.googleapis.com/css2?family=Muli:wght@400;600;800&display=swap"
-	as="style"
-	onload="this.onload=null; this.rel='stylesheet'; document.body.classList.add('fontLoaded')"> -->
     <title>Document</title>
 </head>
 
@@ -21,41 +16,25 @@
         <div class="nav-container">
             <div class="nav-inner">
                 <nav class="navigation c-sb">
-                    <a href="#" class="header-logo">
-                        <svg width="109" height="33" fill="none">
-												<defs/>
-												<path fill="#FFA101" d="M32.06 16.03a16.03 16.03 0 11-32.06 0 16.03 16.03 0 0132.06 0z"/>
-												<path fill="#fff" d="M16.16 5.95c-4.72 0-8.7 3.2-9.87 7.56h-2a12.16 12.16 0 0123.74 0h-2a10.22 10.22 0 00-9.87-7.56z"/>
-												<path fill="#fff" d="M15.92 9.84a5.6 5.6 0 00-5.26 3.67H8.62a7.54 7.54 0 0114.59 0h-2.04a5.6 5.6 0 00-5.25-3.67zM24.86 21.5a10.2 10.2 0 01-18.84-4.09h22.3v-1.95H4.01l-.02.7a12.16 12.16 0 0023.08 5.35h-2.22z"/>
-												<path fill="#222" d="M44.8 9.49c.43.1.9.16 1.4.16a3.8 3.8 0 001.44-.25c.42-.18.75-.42.98-.74.23-.31.34-.68.34-1.1 0-.32-.07-.61-.21-.85a1.78 1.78 0 00-.73-.64 5.46 5.46 0 00-1.42-.48 6.15 6.15 0 01-.83-.21 1.08 1.08 0 01-.39-.23.41.41 0 01-.1-.29c0-.2.1-.36.3-.48.19-.12.44-.19.76-.19a2.55 2.55 0 011.15.27 6.11 6.11 0 01.56.29c.07.02.15.03.23.03.15 0 .28-.07.38-.21.12-.14.17-.3.17-.49a.7.7 0 00-.3-.59c-.3-.21-.63-.37-.98-.47-.36-.1-.76-.15-1.22-.15-.52 0-.99.1-1.4.28-.42.19-.74.44-.98.76a1.8 1.8 0 00-.36 1.1c0 .34.07.64.21.89.14.24.4.46.74.64.35.18.83.34 1.45.47.5.1.84.2 1.02.3.18.1.27.23.27.37 0 .21-.1.38-.3.49-.18.1-.46.16-.83.16a3.08 3.08 0 01-1.62-.4c-.11-.07-.2-.12-.28-.15a.74.74 0 00-.23-.03.5.5 0 00-.4.2.75.75 0 00-.17.49c0 .14.03.25.07.34.05.08.13.17.23.25.28.2.63.35 1.05.46zM40.41 9.4c.16.15.37.22.63.22.27 0 .48-.07.64-.22a.85.85 0 00.23-.63V3.75a.8.8 0 00-.23-.6.86.86 0 00-.64-.24.85.85 0 00-.63.24.82.82 0 00-.22.6v5.02c0 .26.07.47.22.63z"/>
-												<path fill="#222" fill-rule="evenodd" d="M51.34 9.56c-.25 0-.45-.06-.59-.2-.13-.14-.2-.34-.2-.6v-5c0-.26.07-.46.2-.6.14-.13.34-.2.6-.2h1.89c.73 0 1.36.13 1.88.4.53.26.94.64 1.22 1.13.28.5.42 1.09.42 1.77 0 .68-.14 1.28-.42 1.78-.28.5-.68.87-1.21 1.13a4.2 4.2 0 01-1.9.4h-1.89zm1.78-1.38c.64 0 1.12-.16 1.44-.47.32-.32.49-.8.49-1.45 0-.65-.17-1.13-.5-1.45-.31-.3-.8-.47-1.43-.47h-.85v3.84h.85z" clip-rule="evenodd"/>
-												<path fill="#222" d="M64.22 8.81c0-.2-.08-.38-.24-.54L61.9 6.13l1.92-1.88a.79.79 0 00.27-.57c0-.2-.07-.38-.23-.53a.75.75 0 00-.54-.24c-.21 0-.4.09-.56.25l-2.63 2.66V3.75a.8.8 0 00-.23-.6.86.86 0 00-.64-.24.85.85 0 00-.63.24.82.82 0 00-.22.6v5.02c0 .26.07.47.22.63.16.15.37.22.63.22.27 0 .48-.07.64-.22a.85.85 0 00.23-.63V6.56l2.67 2.73c.2.2.4.3.64.3.21 0 .4-.08.55-.23a.75.75 0 00.23-.55zM40.98 18.6c-.25 0-.45-.07-.59-.2-.13-.15-.2-.34-.2-.6V12.8c0-.26.07-.46.2-.6.14-.13.34-.2.6-.2h3.24c.27 0 .47.06.6.17.14.11.21.27.21.49 0 .45-.27.67-.81.67h-2.36v1.26h2.17c.54 0 .81.22.81.66 0 .22-.06.38-.2.49-.14.11-.34.17-.61.17h-2.17v1.37h2.36c.54 0 .81.22.81.67 0 .21-.07.38-.2.49-.14.11-.34.17-.61.17h-3.25zM46.16 16.08c0 .43.26.65.78.65h1.76c.27 0 .46-.05.59-.17.13-.11.2-.28.2-.48a.6.6 0 00-.2-.48c-.13-.11-.32-.17-.59-.17h-1.76c-.52 0-.78.22-.78.65zM54.25 18.68c-.66 0-1.24-.14-1.74-.41-.5-.28-.88-.67-1.15-1.18a3.82 3.82 0 01-.4-1.8c0-.68.13-1.28.4-1.79s.66-.9 1.15-1.18c.5-.28 1.08-.41 1.74-.41.8 0 1.5.2 2.1.62a.67.67 0 01.3.58c0 .2-.06.36-.17.5-.11.13-.24.2-.4.2a.8.8 0 01-.25-.04 1.87 1.87 0 01-.26-.14 2.14 2.14 0 00-1.22-.37c-.56 0-.97.17-1.25.51-.27.33-.4.84-.4 1.52 0 .69.13 1.2.4 1.54.28.33.7.5 1.25.5.19 0 .37-.03.54-.1a9.17 9.17 0 00.97-.41.6.6 0 01.22-.04c.16 0 .29.07.4.2.1.14.16.3.16.5a.7.7 0 01-.07.33.68.68 0 01-.23.24c-.6.42-1.3.63-2.09.63z"/>
-												<path fill="#222" fill-rule="evenodd" d="M59.32 18.27c.5.27 1.08.41 1.76.41.67 0 1.25-.14 1.74-.41.5-.28.88-.68 1.15-1.18.27-.51.4-1.11.4-1.8s-.13-1.28-.4-1.79c-.26-.51-.64-.9-1.14-1.18a3.55 3.55 0 00-1.75-.41 3.6 3.6 0 00-1.76.4c-.5.28-.88.68-1.15 1.19-.27.5-.4 1.1-.4 1.79s.13 1.29.4 1.8c.27.5.65.9 1.15 1.18zm2.93-1.43c-.28.35-.67.52-1.17.52-.5 0-.9-.17-1.17-.52-.28-.35-.43-.87-.43-1.55s.15-1.2.43-1.54c.28-.35.67-.52 1.17-.52.5 0 .88.17 1.16.52.29.35.43.86.43 1.54 0 .67-.14 1.19-.42 1.55z" clip-rule="evenodd"/>
-												<path fill="#222" d="M71.87 11.94c.24 0 .43.08.58.24.15.15.23.36.23.6v5.1c0 .24-.07.43-.2.57a.73.73 0 01-.55.2.76.76 0 01-.55-.2.76.76 0 01-.2-.56v-2.76L70.1 17.1c-.1.2-.22.34-.34.43a.73.73 0 01-.42.12.73.73 0 01-.42-.12 1.26 1.26 0 01-.34-.43l-1.06-1.91v2.7c0 .23-.07.41-.21.56a.73.73 0 01-.55.2.76.76 0 01-.54-.2.76.76 0 01-.2-.56v-5.1c0-.25.07-.46.22-.61a.8.8 0 01.59-.24c.17 0 .32.05.46.15.14.1.25.24.35.42l1.72 3.24 1.71-3.24c.2-.38.46-.57.8-.57zM80.95 12.18a.77.77 0 00-.58-.24c-.33 0-.6.2-.79.57l-1.71 3.24-1.73-3.24a1.1 1.1 0 00-.34-.42.76.76 0 00-.46-.15.8.8 0 00-.6.24.84.84 0 00-.22.6v5.1c0 .24.07.43.2.57.15.14.33.2.55.2.23 0 .4-.06.55-.2a.76.76 0 00.21-.56v-2.7l1.06 1.9c.1.2.22.35.34.44.12.08.26.12.42.12.16 0 .3-.04.42-.12.12-.09.23-.23.34-.43l1.07-1.97v2.76c0 .23.06.42.2.56.15.14.33.2.55.2.22 0 .4-.06.54-.2s.2-.33.2-.56v-5.1a.84.84 0 00-.22-.61zM83.8 18.6c-.26 0-.46-.07-.6-.2-.13-.15-.2-.34-.2-.6V12.8c0-.26.07-.46.2-.6.14-.13.34-.2.6-.2h3.24c.27 0 .47.06.6.17.15.11.22.27.22.49 0 .45-.28.67-.82.67h-2.36v1.26h2.17c.55 0 .82.22.82.66 0 .22-.07.38-.2.49-.15.11-.35.17-.62.17h-2.17v1.37h2.36c.54 0 .82.22.82.67 0 .21-.07.38-.21.49-.14.11-.34.17-.61.17H83.8z"/>
-												<path fill="#222" fill-rule="evenodd" d="M94.93 17.98c0-.15-.06-.31-.17-.48l-.58-.83c-.15-.22-.3-.37-.46-.48-.15-.1-.33-.18-.54-.2.5-.13.9-.36 1.17-.7a2 2 0 00.4-1.27c0-.66-.2-1.16-.6-1.5-.4-.35-1-.53-1.8-.53H90c-.26 0-.45.07-.6.2-.13.14-.2.34-.2.6v5.01c0 .26.08.47.23.63.15.15.36.22.62.22.27 0 .47-.07.62-.22a.87.87 0 00.23-.63v-1.68h.6a.6.6 0 01.34.1c.1.05.2.14.29.27l1.21 1.78c.1.14.21.24.34.3.13.08.27.11.42.11.22 0 .41-.06.57-.2.17-.13.26-.3.26-.5zm-2.04-3.33c-.16.12-.43.18-.81.18h-1.2V13.3h1.2c.38 0 .65.07.81.2.17.11.26.3.26.58 0 .27-.09.46-.26.58z" clip-rule="evenodd"/>
-												<path fill="#222" d="M99.52 18.68c-.66 0-1.24-.14-1.74-.41-.5-.28-.88-.67-1.16-1.18a3.82 3.82 0 01-.4-1.8c0-.68.14-1.28.4-1.79.28-.51.66-.9 1.16-1.18.5-.28 1.08-.41 1.74-.41.8 0 1.49.2 2.09.62a.67.67 0 01.3.58c0 .2-.06.36-.17.5-.1.13-.24.2-.4.2a.8.8 0 01-.25-.04 1.87 1.87 0 01-.26-.14 2.14 2.14 0 00-1.22-.37c-.55 0-.97.17-1.24.51-.27.33-.4.84-.4 1.52 0 .69.13 1.2.4 1.54.27.33.69.5 1.24.5.2 0 .37-.03.55-.1a9.36 9.36 0 00.96-.41.6.6 0 01.23-.04c.15 0 .29.07.4.2.1.14.16.3.16.5a.7.7 0 01-.08.33.69.69 0 01-.22.24c-.6.42-1.3.63-2.09.63zM103.56 18.4c.13.13.33.2.59.2h3.24c.27 0 .47-.06.6-.17.15-.11.22-.28.22-.49 0-.45-.28-.67-.82-.67h-2.36V15.9h2.17c.27 0 .47-.06.61-.17.14-.11.2-.27.2-.49 0-.44-.27-.66-.8-.66h-2.18v-1.26h2.36c.54 0 .81-.22.81-.67 0-.22-.06-.38-.2-.49-.14-.11-.34-.17-.61-.17h-3.24c-.26 0-.46.07-.6.2-.13.14-.2.34-.2.6v5.01c0 .26.07.45.2.6z"/>
-												<path fill="#222" fill-rule="evenodd" d="M42.02 27.5a1.84 1.84 0 01-1.78-1.08 2.92 2.92 0 01-.24-1.24c0-.48.08-.9.24-1.24.17-.35.4-.62.7-.8.3-.2.67-.29 1.08-.29.42 0 .78.1 1.08.29.3.18.54.45.7.8.17.34.25.75.25 1.23s-.08.9-.24 1.24c-.17.35-.4.62-.7.8-.31.2-.67.29-1.09.29zm0-.36c.51 0 .91-.17 1.2-.51.28-.35.42-.83.42-1.46a2.2 2.2 0 00-.43-1.45 1.45 1.45 0 00-1.19-.51c-.5 0-.9.17-1.19.51-.28.35-.42.83-.42 1.45s.14 1.1.42 1.46c.28.34.68.51 1.2.51z" clip-rule="evenodd"/>
-												<path fill="#222" d="M51.2 22.87c.07 0 .12.02.15.06a.2.2 0 01.06.15v4.19c0 .06-.02.11-.05.15a.18.18 0 01-.14.06c-.06 0-.1-.02-.14-.06a.24.24 0 01-.04-.15V23.7l-1.53 2.95c-.05.1-.12.14-.21.14-.1 0-.16-.05-.22-.14l-1.53-2.93v3.55c0 .06-.02.12-.05.15-.03.04-.07.06-.13.06-.07 0-.12-.02-.15-.06a.24.24 0 01-.05-.15v-4.2c0-.05.02-.1.05-.14a.2.2 0 01.16-.06c.08 0 .14.05.2.15l1.72 3.32 1.71-3.32c.05-.1.12-.15.2-.15zM58.21 22.93c-.03-.04-.07-.06-.13-.06s-.1.02-.14.06a.21.21 0 00-.05.15v3.69l-2.81-3.8c-.04-.07-.1-.1-.17-.1a.2.2 0 00-.15.06.21.21 0 00-.05.15v4.19c0 .06.01.12.04.15.03.04.08.06.14.06.06 0 .1-.02.14-.06a.21.21 0 00.05-.15v-3.7l2.82 3.81c.05.06.1.1.17.1.06 0 .11-.02.14-.06a.21.21 0 00.06-.15v-4.2c0-.06-.02-.1-.06-.14zM61.77 27.48a.2.2 0 01-.15-.06.21.21 0 01-.05-.15v-4.2c0-.05.01-.1.05-.14a.2.2 0 01.15-.06c.06 0 .1.02.14.06a.2.2 0 01.05.15v4.19a.2.2 0 01-.05.15.18.18 0 01-.14.06zM66.05 27.22a2.35 2.35 0 001.92.14c.26-.1.48-.24.66-.42a.25.25 0 00.1-.2.18.18 0 00-.05-.11c-.03-.04-.06-.05-.1-.05-.03 0-.08.02-.14.06-.23.19-.44.32-.63.4-.2.07-.41.1-.67.1a1.5 1.5 0 01-1.2-.51 2.23 2.23 0 01-.43-1.46c0-.62.14-1.1.42-1.45.29-.34.7-.51 1.21-.51.26 0 .48.03.67.1.19.08.4.21.63.4.05.04.1.06.15.06.03 0 .06-.01.09-.05a.18.18 0 00.04-.12.25.25 0 00-.09-.19 2.27 2.27 0 00-1.48-.56c-.42 0-.79.1-1.1.29-.31.18-.55.45-.72.8-.16.34-.24.75-.24 1.23s.08.9.24 1.24c.17.35.4.62.72.8zM75.23 22.87c.06 0 .11.02.15.06.03.03.05.08.05.15v4.19c0 .06-.02.12-.05.15-.04.04-.09.06-.15.06a.18.18 0 01-.14-.06.21.21 0 01-.05-.15v-1.96h-2.9v1.96c0 .06-.02.11-.05.15a.18.18 0 01-.14.06.2.2 0 01-.15-.06.21.21 0 01-.05-.15v-4.2c0-.05.01-.1.05-.14a.2.2 0 01.15-.06c.06 0 .1.02.14.06.03.04.05.09.05.15v1.89h2.9v-1.9c0-.05.01-.1.05-.14a.18.18 0 01.14-.06z"/>
-												<path fill="#222" fill-rule="evenodd" d="M82.51 27.43a.16.16 0 00.04-.2l-1.87-4.22a.21.21 0 00-.1-.1.23.23 0 00-.12-.04c-.1 0-.18.04-.22.14l-1.88 4.22v.07c0 .05 0 .1.04.13s.09.05.14.05c.08 0 .14-.04.18-.13l.5-1.12h2.5l.48 1.12.07.1a.2.2 0 00.1.03c.06 0 .1-.02.14-.05zm-2.05-4.04l1.1 2.5h-2.2l1.1-2.5z" clip-rule="evenodd"/>
-												<path fill="#222" d="M88.86 22.87c.06 0 .1.02.13.06.04.03.06.08.06.15v4.19c0 .06-.02.11-.06.15a.18.18 0 01-.14.06c-.06 0-.12-.04-.17-.1l-2.82-3.8v3.69c0 .06-.02.11-.05.15a.17.17 0 01-.14.06c-.06 0-.11-.02-.14-.06a.24.24 0 01-.05-.15v-4.2c0-.05.02-.1.06-.14a.2.2 0 01.15-.06c.07 0 .13.03.17.1l2.81 3.8v-3.7c0-.05.02-.1.05-.14a.17.17 0 01.14-.06zM95.85 22.93c-.03-.04-.07-.06-.13-.06s-.1.02-.14.06a.21.21 0 00-.05.15v3.69l-2.81-3.8c-.04-.07-.1-.1-.17-.1a.2.2 0 00-.15.06.21.21 0 00-.06.15v4.19c0 .06.02.12.05.15.03.04.08.06.14.06.06 0 .1-.02.14-.06a.21.21 0 00.05-.15v-3.7l2.82 3.81c.05.06.1.1.17.1.06 0 .11-.02.14-.06a.21.21 0 00.06-.15v-4.2c0-.06-.02-.1-.06-.14zM99.42 27.44a.22.22 0 01-.16-.05.2.2 0 01-.05-.15V23.1c0-.05.01-.1.05-.14.05-.04.1-.06.16-.06h2.44c.06 0 .1.02.13.05.04.03.06.07.06.13 0 .05-.02.1-.06.12-.03.03-.07.05-.13.05H99.6v1.72h2.14c.05 0 .1.01.13.04s.05.07.05.13c0 .05-.02.1-.06.13-.03.03-.07.04-.12.04H99.6v1.8h2.27c.05 0 .1 0 .12.04.04.02.06.06.06.12s-.02.1-.06.13a.17.17 0 01-.13.04h-2.44zM105.12 27.4c.04.03.09.04.14.04h2.4c.06 0 .1-.01.13-.04s.05-.07.05-.13-.02-.1-.05-.13c-.03-.03-.07-.04-.13-.04h-2.2v-4.02c0-.07-.02-.12-.05-.15-.04-.04-.09-.06-.15-.06a.2.2 0 00-.15.06.21.21 0 00-.05.15v4.18c0 .06.02.1.06.13z"/>
-											</svg>
+                    <a href="#main" class="header-logo" data-anchor="true">
+                        <img src="./img/logo.svg" alt="">
                     </a>
                     <ul class="nav-list c-s">
-                        <li><a href="#">Platform</a></li>
-                        <li><a href="#">E-Shop</a></li>
-                        <li><a href="#">Mobile</a></li>
-                        <li><a href="#">Live-chat</a></li>
-                        <li><a href="#">Social Shopping</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Roadmap</a></li>
-                        <li><a href="#">Contucts</a></li>
+                        <li><a href="#platform" data-anchor="true">Platform</a></li>
+                        <li><a href="#e-shop" data-anchor="true">E-Shop</a></li>
+                        <li><a href="#mobile" data-anchor="true">Mobile</a></li>
+                        <li><a href="#live-chat" data-anchor="true">Live-chat</a></li>
+                        <li><a href="#social" data-anchor="true">Social Shopping</a></li>
+                        <li><a href="#pricing" data-anchor="true">Pricing</a></li>
+                        <li><a href="#roadmap" data-anchor="true">Roadmap</a></li>
+                        <li><a href="#contucts" data-anchor="true">Contucts</a></li>
                     </ul>
-                    <button class="header-cta">Contuct us</button>
+                    <button class="header-cta" data-get="true">Contuct us</button>
                 </nav>
             </div>
         </div>
     </header>
-    <section class="hero">
+    <section class="hero" id="main">
         <div class="content">
             <div class="row">
                 <div class="col">
@@ -64,7 +43,7 @@
                         <p class="hero-descr h4">Ready for
                             <span class="print-text"></span>
                         </p>
-                        <button class="btn hero-cta">Contact us</button>
+                        <button class="btn hero-cta" data-get="true">Contact us</button>
                     </div>
                     <div class="hero-anim">
                         <div class="hero-screen">
@@ -74,7 +53,7 @@
                                 <span class="screen-dots"></span>
 
                             </div>
-                            <div class="scroll-img"></div>
+                            <div class="lazy scroll-img" class="scroll-img" data-bg="./img/hero/ecom-isdk@1.jpg" data-bg-hidpi="./img/hero/ecom-isdk@2x.jpg"></div>
                         </div>
                         <div class="project-name">ISDK E-Shop</div>
                     </div>
@@ -83,7 +62,7 @@
         </div>
     </section>
 
-    <section class="clients">
+    <section class="clients" id="platform">
         <div class="content">
             <h2 class="h2 main-black">Proven platform nopCommerce based on Microsoft Technology ​
             </h2>
@@ -94,10 +73,10 @@
                         <p class="descr-s">Our 10 years expertise officially acknowledged by</p>
                         <div class="logos-block row">
                             <div class="ms-6 c-s">
-                                <img class="lazy logo-1" src="" data-src="./img/clients/microsoft-logo.svg" alt="">
+                                <img class="lazy logo-1" data-src="./img/clients/microsoft-logo.svg" alt="">
                             </div>
                             <div class="ms-6 c-s">
-                                <img class="lazy logo-2" src="" data-src="./img/clients/nopCommerce-logo.svg" alt="">
+                                <img class="lazy logo-2" data-src="./img/clients/nopCommerce-logo.svg" alt="">
                             </div>
 
                         </div>
@@ -106,13 +85,13 @@
                         <p class="descr-s">Our clients already using nopCommerce + Microsoft Azure Solutions</p>
                         <div class="logos-block row">
                             <div class="ms-4 c-c">
-                                <img class="lazy logo-3" src="" data-src="./img/clients/herbalife-logo.svg" alt="">
+                                <img class="lazy logo-3" data-src="./img/clients/herbalife-logo.svg" alt="">
                             </div>
                             <div class="ms-4 c-c">
-                                <img class="lazy logo-4" src="" data-src="./img/clients/Harman-logo.svg" alt="">
+                                <img class="lazy logo-4" data-src="./img/clients/Harman-logo.svg" alt="">
                             </div>
                             <div class="ms-4 c-c">
-                                <img class="lazy logo-5" src="" data-src="./img/clients/jbl-logo.svg" alt="">
+                                <img class="lazy logo-5" data-src="./img/clients/jbl-logo.svg" alt="">
                             </div>
                         </div>
                     </div>
@@ -135,7 +114,11 @@
                             <p class="descr light-text">WhatsApp/Telegram</p>
                         </div>
                         <div class="feature-img">
-                            <img src="./img/features/feature-whatsapp.png" alt="">
+                            <picture>
+                                <source type="image/webp" data-srcset="./img/features/live-chat/live-chat@1.webp 1x, ./img/features/live-chat/live-chat@2x.webp 2x">
+                                <source type="image/png" data-srcset="./img/features/live-chat/live-chat@1.png 1x, ./img/features/live-chat/live-chat@2x.png 2x">
+                                <img class="lazy" alt="Client service in live-chat" data-src="./img/features/live-chat/live-chat@1.png">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -147,7 +130,11 @@
                             <p class="descr">NopCommerce platform</p>
                         </div>
                         <div class="feature-img">
-                            <img src="./img/features/feature-shop.png" alt="">
+                            <picture>
+                                <source type="image/webp" data-srcset="./img/features/online-store/online-store@1.webp 1x, ./img/features/online-store/online-store@2x.webp 2x">
+                                <source type="image/png" data-srcset="./img/features/online-store/online-store@1.png 1x, ./img/features/online-store/online-store@2x.png 2x">
+                                <img class="lazy" alt="Online-store" data-src="./img/features/online-store/online-store@1.png">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -159,7 +146,11 @@
                             <p class="descr light-text">IOS, Android</p>
                         </div>
                         <div class="feature-img">
-                            <img src="./img/features/feature-mstore.png" alt="">
+                            <picture>
+                                <source type="image/webp" data-srcset="./img/features/mobile-store/mobile-store@1.webp 1x, ./img/features/mobile-store/mobile-store@2x.webp 2x">
+                                <source type="image/png" data-srcset="./img/features/mobile-store/mobile-store@1.png 1x, ./img/features/mobile-store/mobile-store@2x.png 2x">
+                                <img class="lazy" alt="mobile-store" data-src="./img/features/mobile-store/mobile-store@1.png">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -170,9 +161,7 @@
                             <h3 class="h3 light-text">ERP & CRM integration</h3>
                             <p class="descr light-text">Oracle, Dynamics 365, SAP</p>
                         </div>
-                        <div class="feature-img">
-                            <img src="./img/features/feature-empty.png" alt="">
-                        </div>
+
                     </div>
                 </div>
 
@@ -181,9 +170,7 @@
                         <div class="feature-text">
                             <h3 class="h3 light-text">Google & Facebook product placement</h3>
                         </div>
-                        <div class="feature-img">
-                            <img src="./img/features/feature-empty.png" alt="">
-                        </div>
+
                     </div>
                 </div>
 
@@ -194,7 +181,11 @@
                             <p class="descr light-text">Facebook store, Instagram store, Audience feedback </p>
                         </div>
                         <div class="feature-img">
-                            <img src="./img/features/feature-social.png" alt="">
+                            <picture>
+                                <source type="image/webp" data-srcset="./img/features/social-shopping/social-shopping@1.webp 1x, ./img/features/social-shopping/social-shopping@2x.webp 2x">
+                                <source type="image/png" data-srcset="./img/features/social-shopping/social-shopping@1.png 1x, ./img/features/social-shopping/social-shopping@2x.png 2x">
+                                <img class="lazy" alt="social-shopping" data-src="./img/features/social-shopping/social-shopping@1.png">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -204,7 +195,11 @@
                             <h3 class="h3 light-text">Digital marketing and ads</h3>
                         </div>
                         <div class="feature-img">
-                            <img src="./img/features/feature-marketing.png" alt="">
+                            <picture>
+                                <source type="image/webp" data-srcset="./img/features/digital-marketing/digital-marketing@1.webp 1x, ./img/features/digital-marketing/digital-marketing@2x.webp 2x">
+                                <source type="image/png" data-srcset="./img/features/digital-marketing/digital-marketing@1.png 1x, ./img/features/digital-marketing/digital-marketing@2x.png 2x">
+                                <img class="lazy" alt="digital-marketing" data-src="./img/features/digital-marketing/digital-marketing@1.png">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -216,7 +211,11 @@
                             <p class="descr light-text">WhatsApp/Telegram</p>
                         </div>
                         <div class="feature-img">
-                            <img src="./img/features/feature-whatsapp.png" alt="">
+                            <picture>
+                                <source type="image/webp" data-srcset="./img/features/live-chat/live-chat@1.webp 1x, ./img/features/live-chat/live-chat@2x.webp 2x">
+                                <source type="image/png" data-srcset="./img/features/live-chat/live-chat@1.png 1x, ./img/features/live-chat/live-chat@2x.png 2x">
+                                <img class="lazy" alt="Client service in live-chat" data-src="./img/features/live-chat/live-chat@1.png">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -228,7 +227,11 @@
                             <p class="descr">NopCommerce platform</p>
                         </div>
                         <div class="feature-img">
-                            <img src="./img/features/feature-shop.png" alt="">
+                            <picture>
+                                <source type="image/webp" data-srcset="./img/features/online-store/online-store@1.webp 1x, ./img/features/online-store/online-store@2x.webp 2x">
+                                <source type="image/png" data-srcset="./img/features/online-store/online-store@1.png 1x, ./img/features/online-store/online-store@2x.png 2x">
+                                <img class="lazy" alt="Online-store" data-src="./img/features/online-store/online-store@1.png">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -240,7 +243,11 @@
                             <p class="descr light-text">IOS, Android</p>
                         </div>
                         <div class="feature-img">
-                            <img src="./img/features/feature-mstore.png" alt="">
+                            <picture>
+                                <source type="image/webp" data-srcset="./img/features/mobile-store/mobile-store@1.webp 1x, ./img/features/mobile-store/mobile-store@2x.webp 2x">
+                                <source type="image/png" data-srcset="./img/features/mobile-store/mobile-store@1.png 1x, ./img/features/mobile-store/mobile-store@2x.png 2x">
+                                <img class="lazy" alt="mobile-store" data-src="./img/features/mobile-store/mobile-store@1.png">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -251,9 +258,7 @@
                             <h3 class="h3 light-text">ERP & CRM integration</h3>
                             <p class="descr light-text">Oracle, Dynamics 365, SAP</p>
                         </div>
-                        <div class="feature-img">
-                            <img src="./img/features/feature-empty.png" alt="">
-                        </div>
+
                     </div>
                 </div>
 
@@ -262,9 +267,7 @@
                         <div class="feature-text">
                             <h3 class="h3 light-text">Google & Facebook product placement</h3>
                         </div>
-                        <div class="feature-img">
-                            <img src="./img/features/feature-empty.png" alt="">
-                        </div>
+
                     </div>
                 </div>
 
@@ -275,7 +278,11 @@
                             <p class="descr light-text">Facebook store, Instagram store, Audience feedback </p>
                         </div>
                         <div class="feature-img">
-                            <img src="./img/features/feature-social.png" alt="">
+                            <picture>
+                                <source type="image/webp" data-srcset="./img/features/social-shopping/social-shopping@1.webp 1x, ./img/features/social-shopping/social-shopping@2x.webp 2x">
+                                <source type="image/png" data-srcset="./img/features/social-shopping/social-shopping@1.png 1x, ./img/features/social-shopping/social-shopping@2x.png 2x">
+                                <img class="lazy" alt="social-shopping" data-src="./img/features/social-shopping/social-shopping@1.png">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -285,7 +292,11 @@
                             <h3 class="h3 light-text">Digital marketing and ads</h3>
                         </div>
                         <div class="feature-img">
-                            <img src="./img/features/feature-marketing.png" alt="">
+                            <picture>
+                                <source type="image/webp" data-srcset="./img/features/digital-marketing/digital-marketing@1.webp 1x, ./img/features/digital-marketing/digital-marketing@2x.webp 2x">
+                                <source type="image/png" data-srcset="./img/features/digital-marketing/digital-marketing@1.png 1x, ./img/features/digital-marketing/digital-marketing@2x.png 2x">
+                                <img class="lazy" alt="digital-marketing" data-src="./img/features/digital-marketing/digital-marketing@1.png">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -323,7 +334,7 @@
         </div>
     </div>
 
-    <section class="tailored">
+    <section class="tailored" id="e-shop">
         <div class="content">
             <div class="row">
                 <div class="tailored-descr pcs-7">
@@ -336,7 +347,7 @@
                         <div class="tailored-select pcs-6 ">
                             <div class="tailored-tab-select-inner active c-s" data-for-tab="1">
                                 <div class="tailored-tab-icon">
-                                    <img class="lazy" src="" data-src="./img/tailored/iu-design.svg" alt="">
+                                    <img class="lazy" data-src="./img/tailored/iu-design.svg" alt="">
                                 </div>
                                 <p class="tailored-tab-descr main-black">UI-design and content​</p>
                                 <div class="tab-progress">
@@ -348,7 +359,7 @@
                         <div class="tailored-select pcs-6 ">
                             <div class="tailored-tab-select-inner c-s" data-for-tab="2">
                                 <div class="tailored-tab-icon">
-                                    <img class="lazy" src="" data-src="./img/tailored/digital-marketing.svg" alt="">
+                                    <img class="lazy" data-src="./img/tailored/digital-marketing.svg" alt="">
                                 </div>
                                 <p class="tailored-tab-descr main-black">Basic digital marketing​</p>
                                 <div class="tab-progress">
@@ -360,7 +371,7 @@
                         <div class="tailored-select pcs-6 ">
                             <div class="tailored-tab-select-inner c-s" data-for-tab="3">
                                 <div class="tailored-tab-icon">
-                                    <img class="lazy" src="" data-src="./img/tailored/order-processing.svg" alt="">
+                                    <img class="lazy" data-src="./img/tailored/order-processing.svg" alt="">
                                 </div>
                                 <p class="tailored-tab-descr main-black">Order processing and operations​</p>
                                 <div class="tab-progress">
@@ -372,7 +383,7 @@
                         <div class="tailored-select pcs-6 ">
                             <div class="tailored-tab-select-inner c-s" data-for-tab="4">
                                 <div class="tailored-tab-icon">
-                                    <img class="lazy" src="" data-src="./img/tailored/fine-tuned.svg" alt="">
+                                    <img class="lazy" data-src="./img/tailored/fine-tuned.svg" alt="">
                                 </div>
                                 <p class="tailored-tab-descr main-black">Fine-tuned for Benelux & Germany​​</p>
                                 <div class="tab-progress">
@@ -389,7 +400,7 @@
                             <picture>
                                 <source type="image/webp" data-srcset="./img/tailored/ui-design@1x.webp 1x, ./img/tailored/ui-design@2x.webp 2x">
                                 <source type="image/png" data-srcset="./img/tailored/ui-design@1x.png 1x, ./img/tailored/ui-design@2x.png 2x">
-                                <img class="lazy" alt="shop page 3d illustration" src="./img/feature/feature-placeholder.svg" data-src="./img/tailored/ui-design@1x.png">
+                                <img class="lazy" alt="shop page 3d illustration" data-src="./img/tailored/ui-design@1x.png">
                             </picture>
                         </div>
                         <div class="tailored-tab-text">
@@ -408,7 +419,7 @@
                             <picture>
                                 <source type="image/webp" data-srcset="./img/tailored/order-process@1x.webp 1x, ./img/tailored/order-process@2x.webp 2x">
                                 <source type="image/png" data-srcset="./img/tailored/order-process@1x.png 1x, ./img/tailored/order-process@2x.png 2x">
-                                <img class="lazy" alt="shop page 3d illustration" src="./img/feature/feature-placeholder.svg" data-src="./img/tailored/order-process.png">
+                                <img class="lazy" alt="shop page 3d illustration" data-src="./img/tailored/order-process.png">
                             </picture>
                         </div>
                         <div class="tailored-tab-text">
@@ -429,7 +440,7 @@
                             <picture>
                                 <source type="image/webp" data-srcset="./img/tailored/digital-marketing@1x.webp 1x, ./img/tailored/digital-marketing@2x.webp 2x">
                                 <source type="image/png" data-srcset="./img/tailored/digital-marketing@1x.png 1x, ./img/tailored/digital-marketing@2x.png 2x">
-                                <img class="lazy" alt="shop page 3d illustration" src="./img/feature/feature-placeholder.svg" data-src="./img/tailored/digital-marketing.png">
+                                <img class="lazy" alt="shop page 3d illustration" data-src="./img/tailored/digital-marketing.png">
                             </picture>
                         </div>
                         <div class="tailored-tab-text">
@@ -450,7 +461,7 @@
                             <picture>
                                 <source type="image/webp" data-srcset="./img/tailored/fine-tuned-image@1x.webp 1x, ./img/tailored/fine-tuned-image@2x.webp 2x">
                                 <source type="image/png" data-srcset="./img/tailored/fine-tuned-image@1x.png 1x, ./img/tailored/fine-tuned-image@2x.png 2x">
-                                <img class="lazy" alt="shop page 3d illustration" src="./img/feature/feature-placeholder.svg" data-src="./img/tailored/fine-tuned-image.png">
+                                <img class="lazy" alt="shop page 3d illustration" data-src="./img/tailored/fine-tuned-image.png">
                             </picture>
                         </div>
                         <div class="tailored-tab-text">
@@ -469,7 +480,7 @@
             </div>
         </div>
     </section>
-    <section class="eccomerce">
+    <section class="eccomerce" id="mobile">
         <div class="ofset-content">
             <div class="content">
                 <div class="row">
@@ -502,10 +513,10 @@
                                 <p class="label-strong main-black m-0"><span class="green-label">Your</span> app buttons in</p>
                                 <div class="load-images c-s">
                                     <div class="load-image c-c">
-                                        <img class="lazy" src="" data-src="./img/ecommerce/apple-load-img.svg" alt="">
+                                        <img class="lazy" data-src="./img/ecommerce/apple-load-img.svg" alt="">
                                     </div>
                                     <div class="load-image c-c">
-                                        <img class="lazy" src="" data-src="./img/ecommerce/google-load-img.svg" alt="">
+                                        <img class="lazy" data-src="./img/ecommerce/google-load-img.svg" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -516,7 +527,7 @@
                             <picture>
                                 <source type="image/webp" data-srcset="./img/ecommerce/ecommerce-img@1x.webp 1x, ./img/ecommerce/ecommerce-img@2x.webp 2x">
                                 <source type="image/png" data-srcset="./img/ecommerce/ecommerce-img@1x.png 1x, ./img/ecommerce/ecommerce-img@2x.png 2x">
-                                <img class="lazy" alt="shop page 3d illustration" src="./img/feature/feature-placeholder.svg" data-src="./img/ecommerce/ecommerce-img@1x.png">
+                                <img class="lazy" alt="shop page 3d illustration" data-src="./img/ecommerce/ecommerce-img@1x.png">
                             </picture>
                         </div>
                     </div>
@@ -540,14 +551,14 @@
         <div class="content">
             <div class="row">
                 <div class="cta-row-button c-c">
-                    <button class="cta-button">Let’s talk</button>
+                    <button class="cta-button" data-get="true">Let’s talk</button>
                 </div>
                 <p class="cta-text light-text centured--title">Or continue scrolling down to learn all the features and terms</p>
             </div>
         </div>
     </div>
 
-    <section class="online">
+    <section class="online" id="live-chat">
         <div class="content">
             <div class="row">
                 <div class="pcs-7">
@@ -576,17 +587,25 @@
                     </div>
                     <div class="tabs-imges c-c">
                         <div class="chat-select active" data-chat="whatsap">
-                            <img src="./img/chat/whatsup-chat.png" alt="">
+                            <picture>
+                                <source type="image/webp" data-srcset="./img/chat/whatsapp-widget.webp 1x, ./img/chat/whatsapp-widget@2x.webp 2x">
+                                <source type="image/jpg" data-srcset="./img/chat/whatsapp-widget.jpg 1x, ./img/chat/whatsapp-widget@2x.jpg 2x">
+                                <img class="lazy" alt="WhatsApp widget" data-src="./img/chat/whatsapp-widget.jpg">
+                            </picture>
                         </div>
                         <div class="chat-select" data-chat="telegram">
-                            <img src="./img/chat/telegram-chat.png" alt="">
+                            <picture>
+                                <source type="image/webp" data-srcset="./img/chat/telegram-widget.webp 1x, ./img/chat/telegram-widget@2x.webp 2x">
+                                <source type="image/jpg" data-srcset="./img/chat/telegram-widget.jpg 1x, ./img/chat/telegram-widget@2x.jpg 2x">
+                                <img class="lazy" alt="Telegram widget" data-src="./img/chat/telegram-widget.jpg">
+                            </picture>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="marketplace ">
+    <section class="marketplace" id="social">
         <div class="content">
             <div class="c-c">
                 <h2 class="h2 main-black">Social Shopping and Marketplaces</h2>
@@ -598,7 +617,7 @@
                         <div class="pcs-3">
                             <div class="mark-card">
                                 <div class="mark-icon">
-                                    <img src="./img/marketplace/icon-shops.svg" alt="">
+                                    <img class="lazy" data-src="./img/marketplace/icon-shops.svg" alt="">
                                 </div>
                                 <p class="descr-l">Facebook + Instagram shop pages</p>
                             </div>
@@ -606,7 +625,7 @@
                         <div class="pcs-3">
                             <div class="mark-card">
                                 <div class="mark-icon">
-                                    <img src="./img/marketplace/icon-tag.svg" alt="">
+                                    <img class="lazy" data-src="./img/marketplace/icon-tag.svg" alt="">
                                 </div>
                                 <p class="descr-l">Tag your products in Facebook & Instagram</p>
                             </div>
@@ -614,7 +633,7 @@
                         <div class="pcs-3">
                             <div class="mark-card">
                                 <div class="mark-icon">
-                                    <img src="./img/marketplace/feedbaks.svg" alt="">
+                                    <img class="lazy" data-src="./img/marketplace/feedbaks.svg" alt="">
                                 </div>
                                 <p class="descr-l">
                                     Get Facebook & Instagram user feedback instantly
@@ -625,7 +644,7 @@
                         <div class="pcs-3">
                             <div class="mark-card">
                                 <div class="mark-icon">
-                                    <img src="./img/marketplace/icon-feed.svg" alt="">
+                                    <img class="lazy" data-src="./img/marketplace/icon-feed.svg" alt="">
                                 </div>
                                 <p class="descr-l m-0">Product feeds also for:
                                 </p>
@@ -635,7 +654,11 @@
                     </div>
                     <div class="pcs-12">
                         <div class="mark-img c-c">
-                            <img src="./img/marketplace/marketplaces-img.png" alt="">
+                            <picture>
+                                <source type="image/webp" data-srcset="./img/marketplace/marketplaces-img.webp 1x, ./img/marketplace/marketplaces-img@2x.webp 2x">
+                                <source type="image/png" data-srcset="./img/marketplace/marketplaces-img.png 1x, ../img/marketplace/marketplaces-img@2x.png 2x">
+                                <img class="lazy" alt="Marketplaces - social" data-src="./img/marketplace/marketplaces-img.png">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -643,7 +666,7 @@
         </div>
     </section>
 
-    <section class="price">
+    <section class="price" id="pricing">
         <div class="content">
             <h2 class="h2 main-black">Choose your pricing plan</h2>
             <h4 class="h4 main-black">
@@ -676,7 +699,7 @@
                                 <div class="price-descr">
                                     <div class="price-label">Nice choose</div>
                                     <div class="price-head c-s">
-                                        <div class="plan-icon"><img src="./img/price/store.svg" alt=""></div>
+                                        <div class="plan-icon"><img class="lazy" data-src="./img/price/store.svg" alt=""></div>
                                     </div>
                                     <h4 class="h4 plan-name">Online store
                                     </h4>
@@ -705,8 +728,8 @@
                                 <div class="price-descr">
                                     <div class="price-label">Nice choose</div>
                                     <div class="price-head c-s">
-                                        <div class="plan-icon"><img src="./img/price/store.svg" alt=""></div>
-                                        <div class="plan-icon"><img src="./img/marketplace/icon-shops.svg" alt=""></div>
+                                        <div class="plan-icon"><img class="lazy" data-src="./img/price/store.svg" alt=""></div>
+                                        <div class="plan-icon"><img class="lazy" data-src="./img/marketplace/icon-shops.svg" alt=""></div>
                                     </div>
                                     <h4 class="h4 plan-name">Online store + Social Shopping
                                     </h4>
@@ -735,8 +758,8 @@
                                 <div class="price-descr">
                                     <div class="price-label">Nice choose</div>
                                     <div class="price-head c-s">
-                                        <div class="plan-icon"><img src="./img/price/store.svg" alt=""></div>
-                                        <div class="plan-icon"><img src="./img/price/mobile-app.svg" alt=""></div>
+                                        <div class="plan-icon"><img class="lazy" data-src="./img/price/store.svg" alt=""></div>
+                                        <div class="plan-icon"><img class="lazy" data-src="./img/price/mobile-app.svg" alt=""></div>
                                     </div>
                                     <h4 class="h4 plan-name">Online store + Mobile Apps</h4>
                                     <ul class="plan-features main-black list-custom color-main col-list">
@@ -762,9 +785,9 @@
                                 <div class="price-descr">
                                     <div class="price-label">Best choose</div>
                                     <div class="price-head c-s">
-                                        <div class="plan-icon"><img src="./img/price/store.svg" alt=""></div>
-                                        <div class="plan-icon"><img src="./img/marketplace/icon-shops.svg" alt=""></div>
-                                        <div class="plan-icon"><img src="./img/price/mobile-app.svg" alt=""></div>
+                                        <div class="plan-icon"><img class="lazy" data-src="./img/price/store.svg" alt=""></div>
+                                        <div class="plan-icon"><img class="lazy" data-src="./img/marketplace/icon-shops.svg" alt=""></div>
+                                        <div class="plan-icon"><img class="lazy" data-src="./img/price/mobile-app.svg" alt=""></div>
                                     </div>
                                     <h4 class="h4 plan-name">ALL-IN-ONE</h4>
                                     <ul class="plan-features main-black list-custom color-main col-list">
@@ -794,7 +817,7 @@
                                 <div class="price-descr">
                                     <div class="price-label">Nice choose</div>
                                     <div class="price-head c-s">
-                                        <div class="plan-icon"><img src="./img/price/store.svg" alt=""></div>
+                                        <div class="plan-icon"><img class="lazy" data-src="./img/price/store.svg" alt=""></div>
                                     </div>
                                     <h4 class="h4 plan-name">Online store
                                     </h4>
@@ -830,8 +853,8 @@
                                 <div class="price-descr">
                                     <div class="price-label">Nice choose</div>
                                     <div class="price-head c-s">
-                                        <div class="plan-icon"><img src="./img/price/store.svg" alt=""></div>
-                                        <div class="plan-icon"><img src="./img/marketplace/icon-shops.svg" alt=""></div>
+                                        <div class="plan-icon"><img class="lazy" data-src="./img/price/store.svg" alt=""></div>
+                                        <div class="plan-icon"><img class="lazy" data-src="./img/marketplace/icon-shops.svg" alt=""></div>
                                     </div>
                                     <h4 class="h4 plan-name">Online store + Social Shopping
                                     </h4>
@@ -869,8 +892,8 @@
                                 <div class="price-descr">
                                     <div class="price-label">Nice choose</div>
                                     <div class="price-head c-s">
-                                        <div class="plan-icon"><img src="./img/price/store.svg" alt=""></div>
-                                        <div class="plan-icon"><img src="./img/price/mobile-app.svg" alt=""></div>
+                                        <div class="plan-icon"><img class="lazy" data-src="./img/price/store.svg" alt=""></div>
+                                        <div class="plan-icon"><img class="lazy" data-src="./img/price/mobile-app.svg" alt=""></div>
                                     </div>
                                     <h4 class="h4 plan-name">Online store + Mobile Apps</h4>
                                     <ul class="plan-features main-black list-custom color-main col-list">
@@ -906,9 +929,9 @@
                                 <div class="price-descr">
                                     <div class="price-label">Best choose</div>
                                     <div class="price-head c-s">
-                                        <div class="plan-icon"><img src="./img/price/store.svg" alt=""></div>
-                                        <div class="plan-icon"><img src="./img/marketplace/icon-shops.svg" alt=""></div>
-                                        <div class="plan-icon"><img src="./img/price/mobile-app.svg" alt=""></div>
+                                        <div class="plan-icon"><img class="lazy" data-src="./img/price/store.svg" alt=""></div>
+                                        <div class="plan-icon"><img class="lazy" data-src="./img/marketplace/icon-shops.svg" alt=""></div>
+                                        <div class="plan-icon"><img class="lazy" data-src="./img/price/mobile-app.svg" alt=""></div>
                                     </div>
                                     <h4 class="h4 plan-name">ALL-IN-ONE</h4>
                                     <ul class="plan-features main-black list-custom color-main col-list">
@@ -933,7 +956,7 @@
             </div>
         </div>
     </section>
-    <section class="timeline">
+    <section class="timeline" id="roadmap">
         <div class="content">
             <h2 class="h2 main-black">Project timeline</h2>
             <h4 class="h4 main-black">Click on project steps - explore the milestones</h4>
@@ -1422,7 +1445,7 @@
         </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contucts">
         <div class="content">
             <div class="row">
                 <div class="pcs-12">
@@ -1430,35 +1453,35 @@
                         <div class="countrys c-s">
                             <div class="country">
                                 <button class="country-btn c-s active" data-to="usa">
-																	<div class="cont-img"><img src="./img/map/usa.svg" alt=""></div>
+																	<div class="cont-img"><img class="lazy" data-src="./img/map/usa.svg" alt=""></div>
 																	<div class="cont-name">USA</div>
 												</button>
                             </div>
 
                             <div class="country">
                                 <button class="country-btn c-s" data-to="germany">
-																	<div class="cont-img"><img src="./img/map/germany.svg" alt=""></div>
+																	<div class="cont-img"><img class="lazy" data-src="./img/map/germany.svg" alt=""></div>
 																	<div class="cont-name">Germany</div>
 											</button>
                             </div>
 
                             <div class="country">
                                 <button class="country-btn c-s" data-to="benelux">
-																	<div class="cont-img"><img src="./img/map/benelux.svg" alt=""></div>
+																	<div class="cont-img"><img class="lazy" data-src="./img/map/benelux.svg" alt=""></div>
 																	<div class="cont-name">Benelux</div>
 										</button>
                             </div>
 
                             <div class="country">
                                 <button class="country-btn c-s" data-to="russia">
-																	<div class="cont-img"><img src="./img/map/russia.svg" alt=""></div>
+																	<div class="cont-img"><img class="lazy" data-src="./img/map/russia.svg" alt=""></div>
 																	<div class="cont-name">Russia</div>
 									</button>
                             </div>
 
                             <div class="country">
                                 <button class="country-btn c-s" data-to="latvia">
-																	<div class="cont-img"><img src="./img/map/latvia.svg" alt=""></div>
+																	<div class="cont-img"><img class="lazy" data-src="./img/map/latvia.svg" alt=""></div>
 																	<div class="cont-name">Baltic</div>
 								</button>
                             </div>
@@ -1611,7 +1634,104 @@
         </div>
     </section>
 
-    <div class="modal-overlay"></div>
+    <div class="modal">
+        <div class="modal-dealog">
+            <div class="container">
+                <div class="content">
+                    <div class="modal-inner">
+                        <div class="modal-header">
+                            <button class="close-modal">
+															<svg width="24" height="24" fill="none">
+																<defs/>
+																<path  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6L6 18M6 6l12 12"/>
+															</svg>
+						</button>
+                        </div>
+                        <form method="get" name="contactsForm" class="form">
+                            <div class="form-header">
+                                <span class="sub-title h4">Turnkey e-Commerce Project and Support</span>
+                                <h3 class="form-header-title h1">Get in touch with us</h3>
+                            </div>
+                            <div class="form-inner">
+                                <div class="form-input">
+                                    <label for="name" class="inp">
+						<input type="text" id="name" name="name" placeholder=" " required="" value="">
+						<span class="label">Name</span>
+					</label>
+                                </div>
+                                <div class="form-input">
+                                    <label for="email" class="inp">
+					<input type="email" id="email" name="email" placeholder=" " required="" value="">
+					<span class="label">e-mail</span>
+					
+				</label>
+                                </div>
+
+                                <div class="form-input">
+                                    <label for="phone" class="inp">
+						<input type="phone" id="phone" name="phone" placeholder=" " required="" value="">
+						<span class="label">Phone</span>
+						
+					</label>
+                                </div>
+
+                                <div class="form-input">
+                                    <label for="company" class="inp">
+					<input type="text" id="company" name="company" placeholder=" " required="" value="">
+					<span class="label">Company</span>
+					
+				</label>
+                                </div>
+
+                                <div class="form-textarea">
+                                    <label for="message" class="inp">
+						<textarea id="message" placeholder=" " name="message" rows="3" class="input-textarea" value=""></textarea>
+						<span class="label">Comment</span>
+					</label>
+
+                                </div>
+                                <span class="submit-text">Sending the form I consent ISDK to store and process my data</span>
+
+                                <input type="submit" class="submit-button" value="Let's innovate">
+                            </div>
+
+                            <div class="after-submit c-c">
+                                <div class="after-submit-inner c-c">
+                                    <div class="bg-icon c-c">
+                                        <img class="lazy" data-src="./icons/thumbs-up.svg" alt="">
+                                    </div>
+                                    <h2 class="after-submit-title">Заявка отправлена!</h2>
+                                    <p class="after-submit-descr">Пожалуйста, ожидайте когда с Вами свяжется наш специалист!</p>
+
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="modal-quote">
+                            <div class="quote-inner">
+                                <div class="company-logo">
+                                    <img class="lazy" data-src="./img/clients/jbl-logo.svg" alt="">
+                                </div>
+                                <p class="quote-text">
+                                    “We are going to continue working together with ISDK as they proved to be responsible and highly competent professionals meeting our business needs accurately and in a timely manner.”
+
+                                </p>
+                                <div class="author c-s">
+                                    <div class="author-img">
+                                        <img class="lazy" data-src="./img/qoute/author-img.png" alt="">
+                                    </div>
+                                    <div class="author-info">
+                                        <span class="quote-name">Boris Kulaev</span>
+                                        <span class="quote-reg">Head of eCommerce, Harman&JBL</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script defer src="./js/script.js"></script>
