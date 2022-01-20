@@ -925,7 +925,8 @@
     } */
     
     @media (max-width: 1023px) {
-        .nav-list {
+        .nav-list,
+        .header-cta {
             display: none;
             user-select: none;
             pointer-events: none;
