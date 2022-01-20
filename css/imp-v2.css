@@ -959,7 +959,7 @@ p {
     .header-logo {
         margin-right: auto;
     }
-    .nav-list {
+    /* .nav-list {
         position: absolute;
         top: 100%;
         right: 0;
@@ -983,7 +983,7 @@ p {
         display: block;
         padding: 6px 0;
         text-align: right;
-    }
+    } */
     .header .mob_menu_btn {
         display: flex;
     }
