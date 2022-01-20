@@ -881,8 +881,7 @@
     .clients {
         margin-top: 4rem;
     }
-    
-    @media (max-width: 1279px) {
+    /* @media (max-width: 1279px) {
         .content {
             max-width: 100%;
             padding-right: 24px;
@@ -923,7 +922,7 @@
         .logos-block.row img {
             max-width: 100%;
         }
-    }
+    } */
     
     @media (max-width: 1023px) {
         .nav-list,
@@ -933,71 +932,70 @@
             pointer-events: none;
         }
     }
-    
-    @media (max-width: 1023px) {
-        body {
-            font-size: .95rem;
-        }
-        .h1 {
-            font-size: 2.25rem;
-        }
-        .h2 {
-            font-size: 1.75rem;
-            line-height: 1.25;
-            margin-bottom: 1rem;
-        }
-        .h3 {
-            font-size: 1.15rem;
-        }
-        .h4 {
-            font-size: 1.05rem;
-        }
-        .btn {
-            padding: .65rem 2.25rem;
-        }
-        .nav-container {
-            padding: .65rem 1.25rem;
-        }
-        .header-logo {
-            margin-right: auto;
-        }
-        .nav-list {
-            position: absolute;
-            top: 100%;
-            right: 0;
-            display: block;
-            width: 220px;
-            margin-right: 1.25rem;
-            padding: 20px 30px;
-            transition: transform .3s linear;
-            transform: translateX(120%);
-            border-radius: 8px;
-            background: #fff;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
-            user-select: none;
-            pointer-events: none;
-        }
-        .nav-list.show {
-            transform: translateX(0);
-            pointer-events: all;
-        }
-        .nav-list li a {
-            display: block;
-            padding: 6px 0;
-            text-align: right;
-        }
-        .header .mob_menu_btn {
-            display: flex;
-        }
-        .hero-anim {
-            padding-top: 2.5rem;
-        }
-        .logos-wrapper {
-            padding: 1.25rem 1.5rem;
-        }
+    /* @media (max-width: 1023px) {
+    body {
+        font-size: .95rem;
     }
-    
-    @media (max-width: 767px) {
+    .h1 {
+        font-size: 2.25rem;
+    }
+    .h2 {
+        font-size: 1.75rem;
+        line-height: 1.25;
+        margin-bottom: 1rem;
+    }
+    .h3 {
+        font-size: 1.15rem;
+    }
+    .h4 {
+        font-size: 1.05rem;
+    }
+    .btn {
+        padding: .65rem 2.25rem;
+    }
+    .nav-container {
+        padding: .65rem 1.25rem;
+    }
+    .header-logo {
+        margin-right: auto;
+    }
+    .nav-list {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        display: block;
+        width: 220px;
+        margin-right: 1.25rem;
+        padding: 20px 30px;
+        transition: transform .3s linear;
+        transform: translateX(120%);
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+        user-select: none;
+        pointer-events: none;
+        display: ;
+    }
+    .nav-list.show {
+        transform: translateX(0);
+        pointer-events: all;
+    }
+    .nav-list li a {
+        display: block;
+        padding: 6px 0;
+        text-align: right;
+    }
+     .header .mob_menu_btn {
+        display: flex;
+    }
+    .hero-anim {
+        padding-top: 2.5rem;
+    }
+    .logos-wrapper {
+        padding: 1.25rem 1.5rem;
+    }
+} */
+    /* @media (max-width: 767px) {
         .h1 {
             font-size: 2rem;
             line-height: 1.25;
@@ -1086,4 +1084,4 @@
         .descr-s {
             font-size: .9rem;
         }
-    }
+    } */
