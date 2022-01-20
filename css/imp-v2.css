@@ -881,7 +881,8 @@
     .clients {
         margin-top: 4rem;
     }
-    /* @media (max-width: 1279px) {
+    
+    @media (max-width: 1279px) {
         .content {
             max-width: 100%;
             padding-right: 24px;
@@ -922,7 +923,7 @@
         .logos-block.row img {
             max-width: 100%;
         }
-    } */
+    }
     
     @media (max-width: 1023px) {
         .nav-list,
