@@ -191,8 +191,10 @@
             for (var i = 0; i < listItems.length; i++) {
                 var listItem = listItems[i];
 
-                if (isPartiallyVisible(listItem)) {
+                if (isFullyVisible(listItem)) {
                     listItem.classList.add("active");
+                } else {
+                    listItem.classList.remove("active");
                 }
             }
         }

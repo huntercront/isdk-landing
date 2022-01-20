@@ -1,0 +1,593 @@
+@media print,
+(max-width: 1279px) {
+    .feature {
+        margin-top: 6rem;
+        margin-bottom: 4rem;
+    }
+    .cta-button {
+        margin-right: 0;
+        margin-left: 1rem;
+        padding: .75rem 1.5rem;
+    }
+    .tailored,
+    .eccomerce {
+        margin-top: 6rem;
+    }
+    .tailored-selects {
+        margin-top: 2rem;
+    }
+    .tailored-select {
+        margin-bottom: .5rem;
+    }
+    .tailored-tab-select-inner {
+        padding: .75rem 1rem;
+    }
+    .tailored-tab-image {
+        margin-bottom: 1.5rem;
+    }
+    .list-custom>li {
+        margin-bottom: .5rem;
+    }
+    .eccomerce {
+        margin-bottom: 4rem;
+    }
+    .eccomerce-img {
+        right: 10%;
+        bottom: -52px;
+    }
+    .eccomerce-lists {
+        margin-top: 1.5rem;
+    }
+    .ecommerce-load-inner {
+        margin-top: 1.25rem;
+        padding: 1rem 1.5rem;
+    }
+    .get-plane .get {
+        opacity: 1;
+    }
+    .marketplace h2 {
+        margin-bottom: 2.5rem;
+    }
+    .mark-img {
+        margin-top: 1.65rem;
+    }
+    .timeline {
+        margin-top: 4rem;
+    }
+    .contacts {
+        margin-top: 6rem;
+    }
+    .map {
+        margin-bottom: 3rem;
+    }
+    .modal-dealog {
+        margin: 1.5rem auto;
+    }
+    .modal-inner .sub-title {
+        font-size: 1rem;
+    }
+    .form-header-title {
+        font-size: 2.19rem;
+    }
+    .quote-text {
+        font-size: 1rem;
+    }
+}
+
+@media print,
+(max-width: 1023px) {
+    .feature {
+        margin-top: 5rem;
+    }
+    .feature h2 {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .feature-card {
+        flex: 0 0 33.333%;
+    }
+    .feature-text {
+        padding: 1.25rem 1rem 0rem 1rem;
+    }
+    .feature-text>p {
+        font-size: .85rem;
+        margin-top: 4px;
+    }
+    .cta-row-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    .cta-title {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: .75rem;
+        text-align: center;
+    }
+    .cta-button {
+        margin-right: .75rem;
+        margin-left: .75rem;
+        padding: .65rem 1.5rem;
+    }
+    .tailored {
+        margin-top: 5rem;
+    }
+    .tailored-title,
+    .tailored-sub {
+        width: 100%;
+        max-width: 100%;
+    }
+    .tailored-selects {
+        margin-bottom: 1rem;
+        padding: 0;
+    }
+    .eccomerce {
+        margin-top: 4rem;
+    }
+    .ecommerce-load-inner {
+        margin-top: 1.15rem;
+        padding: 1rem 1.15rem;
+    }
+    .load-images {
+        margin-left: .75rem;
+    }
+    .list-custom>li::before {
+        top: .44rem;
+    }
+    .eccomerce-img {
+        top: -1.25rem;
+        right: 0;
+        bottom: auto;
+    }
+    .online {
+        margin-top: 4rem;
+    }
+    .marketplace h2 {
+        max-width: 100%;
+    }
+    .marketplace .pcs-10>.row {
+        margin-bottom: -1.5rem;
+    }
+    .marketplace .pcs-10>.row>* {
+        margin-bottom: 1.5rem;
+    }
+    .price {
+        margin-top: 4rem;
+    }
+    .price-tables .row {
+        font-size: 0;
+        display: block;
+        overflow: auto;
+        width: calc(100% + 48px);
+        margin: 1.5rem -24px 0;
+        padding: 0 24px;
+        white-space: nowrap;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+    .price-tables .row::-webkit-scrollbar {
+        width: 0 !important;
+        height: 0 !important;
+        background-color: transparent !important;
+    }
+    .price-tables .row::-webkit-scrollbar-thumb {
+        background-color: transparent !important;
+    }
+    .price-tables .row>* {
+        display: inline-block;
+        width: 280px;
+        max-width: none;
+        margin: 0;
+        vertical-align: top;
+        white-space: normal;
+    }
+    .price-tables .row>*+* {
+        margin-left: 1.25rem;
+    }
+    .sprints {
+        font-size: 0;
+        display: block;
+        overflow: auto;
+        width: calc(100% + 48px);
+        margin: 1.5rem -24px 0;
+        padding: 0 24px;
+        white-space: nowrap;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+    .sprints::-webkit-scrollbar {
+        width: 0 !important;
+        height: 0 !important;
+        background-color: transparent !important;
+    }
+    .sprints::-webkit-scrollbar-thumb {
+        background-color: transparent !important;
+    }
+    .sprints>* {
+        display: inline-block;
+        width: 190px;
+        max-width: none;
+        margin: 0;
+        vertical-align: top;
+        white-space: normal;
+    }
+    .sprints>*+* {
+        margin-left: 1.25rem;
+    }
+    .sprint-inner {
+        width: 100%;
+    }
+    .contacts {
+        margin-top: 5rem;
+    }
+    .conuntry-name {
+        font-size: 1.5rem;
+    }
+    .cont-link {
+        font-size: 1.05rem;
+    }
+    .modal-dealog .content {
+        padding: 0;
+    }
+    .modal-inner {
+        padding-top: 0;
+    }
+    .modal-inner .sub-title {
+        font-size: .9rem;
+    }
+    .form-header-title {
+        font-size: 2rem;
+    }
+    .modal-inner .form {
+        max-width: 100%;
+        padding-right: 0;
+        flex: 0 0 100%;
+    }
+    .modal-quote {
+        max-width: 100%;
+        padding-left: 0;
+        flex: 0 0 100%;
+    }
+    .quote-inner {
+        margin-top: 2rem;
+    }
+}
+
+@media print,
+(max-width: 767px) {
+    .contacts {
+        margin-top: 4rem;
+    }
+    .countrys {
+        display: flex;
+        margin-bottom: .25rem;
+        margin-left: -1rem;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    .country,
+    .country+.country {
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+    }
+    .country-contacts {
+        display: flex;
+        margin-bottom: -1rem;
+        margin-left: -2rem;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    .contacts_line,
+    .contacts_line+.contacts_line {
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+    }
+    .conuntry-name {
+        font-size: 1.25rem;
+    }
+    .cont-link {
+        font-size: 1rem;
+    }
+    .feature {
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+    }
+    .feature-card {
+        flex: 0 0 50%;
+    }
+    .tailored {
+        margin-top: 4rem;
+    }
+    .tailored-selects {
+        margin-top: 1.5rem;
+    }
+    .tailored-tab-select-inner {
+        padding: .65rem .65rem;
+    }
+    .tailored-tab-icon img {
+        display: block;
+        width: 36px;
+        height: 36px;
+    }
+    .tailored-tab-descr {
+        font-size: .9rem;
+        margin-left: .75rem;
+    }
+    .tailored-tab-image {
+        margin-bottom: 1rem;
+    }
+    .eccomerce {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .eccomerce .row>* {
+        max-width: 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    }
+    .ecommerce-load-inner {
+        width: 100%;
+        margin-top: .75rem;
+        padding: 1rem 1.15rem;
+    }
+    .load-image {
+        height: 34px;
+    }
+    .eccomerce-img {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 1rem auto -72px;
+    }
+    .eccomerce-img picture {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .eccomerce-img img {
+        display: block;
+        width: 360px;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .online .row>* {
+        max-width: 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    }
+    .online .row>*+* {
+        margin-top: 1rem;
+    }
+    .online .h2 {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+    .online .h4 {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .marketplace {
+        margin-top: 3rem;
+    }
+    .marketplace h2 {
+        margin-bottom: 2rem;
+    }
+    .descr-l {
+        font-size: .95rem;
+    }
+    .mark-img {
+        margin-top: 1.25rem;
+    }
+    .price {
+        margin-top: 3rem;
+    }
+    .timeline {
+        margin-top: 3rem;
+    }
+    .title-sprint {
+        margin-top: 1.5rem;
+        margin-bottom: 1.25rem;
+    }
+    .task-line .row {
+        margin-bottom: -.5rem;
+        margin-left: -1rem;
+    }
+    .task-line .row>* {
+        width: calc(100% - 1rem);
+        max-width: calc(100% - 1rem);
+        margin-bottom: .5rem;
+        margin-left: 1rem;
+        padding: 0;
+        -ms-flex: 0 0 calc(100% - 1rem);
+        flex: 0 0 calc(100% - 1rem);
+    }
+    .modal-dealog .content {
+        padding: 0;
+    }
+    .modal-inner {
+        padding-top: 0;
+    }
+    .modal-inner .sub-title {
+        font-size: .8rem;
+        display: block;
+        margin-bottom: .5rem;
+    }
+    .form-header {
+        padding-right: 72px;
+    }
+    .form-header-title {
+        font-size: 1.75rem;
+        line-height: 120%;
+    }
+    .modal-inner .form {
+        max-width: 100%;
+        padding-right: 0;
+        flex: 0 0 100%;
+    }
+    .modal-quote {
+        max-width: 100%;
+        padding-left: 0;
+        flex: 0 0 100%;
+    }
+    .quote-inner {
+        margin-top: 2rem;
+    }
+    footer .links>*+* {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 479px) {
+    .feature-card {
+        flex: 0 0 75%;
+    }
+    .cta-button {
+        min-width: 51%;
+        margin: 0;
+    }
+    .cta-button+.cta-button {
+        margin-top: .75rem;
+    }
+    .tailored {
+        margin-top: 3rem;
+    }
+    .tailored-descr,
+    .tailored-tabs {
+        max-width: 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    }
+    .tailored-selects {
+        font-size: 0;
+        display: block;
+        overflow: auto;
+        width: calc(100% + 30px);
+        margin-right: -15px;
+        margin-left: -15px;
+        padding: 0 7px;
+        white-space: nowrap;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+    .tailored-selects::-webkit-scrollbar {
+        width: 0 !important;
+        height: 0 !important;
+        background-color: transparent !important;
+    }
+    .tailored-selects::-webkit-scrollbar-thumb {
+        background-color: transparent !important;
+    }
+    .tailored-selects.row>* {
+        display: inline-block;
+        width: 252px;
+        max-width: none;
+        margin: 0;
+        vertical-align: top;
+        white-space: normal;
+        -ms-flex: none;
+        flex: none;
+    }
+    .tailored-selects.row>*+* {
+        margin-left: 8px;
+    }
+    .tailored .tab-progress {
+        bottom: 0;
+    }
+    .list-custom {
+        padding-left: 20px;
+    }
+    .list-custom>li {
+        font-size: .9rem;
+    }
+    .ofset-content {
+        padding: 2.5rem 0;
+    }
+    .ecommerce-load-inner {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    .ecommerce-load-inner .label-strong {
+        display: block;
+        width: 100%;
+        margin-bottom: .5rem;
+    }
+    .load-images {
+        margin-left: 0;
+    }
+    .load-image {
+        height: 36px;
+    }
+    .eccomerce-img {
+        margin-bottom: -40px;
+    }
+    .online .h4 {
+        margin-bottom: 1.15rem;
+    }
+    .online .descr {
+        font-size: .9rem;
+    }
+    .tab-select,
+    .tab-select-inner {
+        width: 100%;
+    }
+    .select-tab {
+        font-size: .9rem;
+        width: 50%;
+        padding: .25rem 0;
+    }
+    [data-target='telegram'].select-tab {
+        justify-content: flex-end;
+    }
+    .marketplace .pcs-10>.row>* {
+        max-width: 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    }
+    .mark-card {
+        position: relative;
+        min-height: 3rem;
+        padding-left: 4rem;
+    }
+    .mark-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3rem;
+        height: 3rem;
+        margin: 0;
+    }
+    .price-tables .row {
+        width: calc(100% + 32px);
+        margin: 1.5rem -16px 0;
+        padding: 0 16px;
+    }
+    .price-tables .row>* {
+        max-width: calc(100vw - 4rem);
+    }
+    .sprints {
+        width: calc(100% + 32px);
+        margin: 1.5rem -16px 0;
+        padding: 0 16px;
+    }
+    .form-header-title {
+        font-size: 1.65rem;
+    }
+    footer {
+        padding: 20px 0;
+    }
+    footer .links>*+* {
+        margin-left: 24px;
+    }
+}
