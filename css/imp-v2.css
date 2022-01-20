@@ -696,7 +696,8 @@ p {
     box-shadow: 0 0 1px rgba(0, 0, 0, .04), 0 2px 6px rgba(0, 0, 0, .04), 0 16px 24px rgba(0, 0, 0, .06);
 }
 
-.header .mob_menu_btn {
+
+/* .header .mob_menu_btn {
     color: #121118;
     display: none;
     width: 40px;
@@ -735,7 +736,7 @@ p {
 
 .header .mob_menu_btn span:after {
     top: 8px;
-}
+} */
 
 .hero-content {
     flex-direction: column;
